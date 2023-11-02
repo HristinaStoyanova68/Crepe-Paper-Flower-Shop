@@ -25,7 +25,7 @@ export default function Header () {
             <div className="container">
                <div className="row">
                   <div className="col-sm-12">
-                     <div className="logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+                     <div className="logo"><a href="index.html">hristina&apos;s craft world</a></div>
                   </div>
                </div>
             </div>

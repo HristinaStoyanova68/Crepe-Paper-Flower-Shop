@@ -828,9 +828,17 @@ a:hover {
     text-align: center;
 }
 
+.footer_logo a, 
+.logo a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
 .input_bt {
     width: 60%;
     margin: 0 auto;
+    padding-top: 5em;
     text-align: center;
     display: flex;
     border-bottom: 1px solid #ffffff !important;
