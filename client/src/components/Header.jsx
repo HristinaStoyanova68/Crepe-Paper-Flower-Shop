@@ -1,4 +1,13 @@
 export default function Header () {
+
+   const openNav = () => {
+      //TODO
+   }
+
+   const closeNav = () => {
+      //TODO
+   }
+
     return (
         <div className="banner_bg_main">
          
@@ -36,13 +45,13 @@ export default function Header () {
             <div className="container">
                <div className="containt_main">
                   <div id="mySidenav" className="sidenav">
-                     <a href="javascript:void(0)" className="closebtn" onClick="closeNav()">&times;</a>
+                     <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
                      <a href="index.html">Home</a>
                      <a href="fashion.html">Fashion</a>
                      <a href="electronic.html">Electronic</a>
                      <a href="jewellery.html">Jewellery</a>
                   </div>
-                  <span className="toggle_icon" onClick="openNav()"><img src="images/toggle-icon.png"/></span>
+                  <span className="toggle_icon" onClick={openNav}><img src="images/toggle-icon.png"/></span>
                   <div className="dropdown">
                      <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
                      </button>

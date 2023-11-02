@@ -12,7 +12,7 @@ function App() {
       <Header />         
       <Bouquets />      
       <Decoration />      
-      <GiftBoxes />      
+      <GiftBoxes /> 
       <Footer />          
       <CopyRight />      
     </div>    

@@ -47,7 +47,7 @@ export default function Bouquets () {
                </div>
                <div className="carousel-item">
                   <div className="container">
-                     <h1 className="fashion_taital">Something Else</h1>
+                     <h1 className="fashion_taital">ASDF</h1>
                      <div className="fashion_section_2">
                         <div className="row">
                            <div className="col-lg-4 col-sm-4">
@@ -89,7 +89,7 @@ export default function Bouquets () {
                </div>
                <div className="carousel-item">
                   <div className="container">
-                     <h1 className="fashion_taital">Something Else</h1>
+                     <h1 className="fashion_taital">BOUQUETS</h1>
                      <div className="fashion_section_2">
                         <div className="row">
                            <div className="col-lg-4 col-sm-4">
