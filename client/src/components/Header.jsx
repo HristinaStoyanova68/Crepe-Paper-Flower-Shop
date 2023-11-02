@@ -73,7 +73,7 @@ export default function Header () {
                      </div>
                   </div>
                   <div className="header_box">
-                     <div className="lang_box ">
+                     {/* <div className="lang_box ">
                         <a href="#" title="Language" className="nav-link" data-toggle="dropdown" aria-expanded="true">
                         <img src="images/flag-uk.png" alt="flag" className="mr-2 " title="United Kingdom"/> English <i className="fa fa-angle-down ml-2" aria-hidden="true"></i>
                         </a>
@@ -83,16 +83,16 @@ export default function Header () {
                            French
                            </a>
                         </div>
-                     </div>
+                     </div> */}
                      <div className="login_menu">
                         <ul>
                            <li><a href="#">
                               <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-                              <span className="padding_10">Cart</span></a>
+                              <span className="padding_10">Basket</span></a>
                            </li>
                            <li><a href="#">
                               <i className="fa fa-user" aria-hidden="true"></i>
-                              <span className="padding_10">Cart</span></a>
+                              <span className="padding_10">Profile</span></a>
                            </li>
                         </ul>
                      </div>
