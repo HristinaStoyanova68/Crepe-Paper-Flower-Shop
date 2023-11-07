@@ -10,9 +10,9 @@ export default function Bouquets () {
                         <div className="row">
                            <div className="col-lg-4 col-sm-4">
                               <div className="box_main">
-                                 <h4 className="shirt_text">Man T -shirt</h4>
-                                 <p className="price_text">Price  <span style={{color: '#262626'}}>$ 30</span></p>
-                                 <div className="tshirt_img"><img src="images/tshirt-img.png"/></div>
+                                 <h4 className="shirt_text">Spring Flowers</h4>
+                                 <p className="price_text">Price  <span style={{color: '#262626'}}>£ 70</span></p>
+                                 <div className="tshirt_img"><img src="images/16638917945_bc1809faeb.jpg"/></div>
                                  <div className="btn_main">
                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -21,9 +21,9 @@ export default function Bouquets () {
                            </div>
                            <div className="col-lg-4 col-sm-4">
                               <div className="box_main">
-                                 <h4 className="shirt_text">Man -shirt</h4>
-                                 <p className="price_text">Price  <span style={{color: '#262626'}}>$ 30</span></p>
-                                 <div className="tshirt_img"><img src="images/dress-shirt-img.png"/></div>
+                                 <h4 className="shirt_text">Peony Flowers</h4>
+                                 <p className="price_text">Price  <span style={{color: '#262626'}}>£ 50</span></p>
+                                 <div className="tshirt_img"><img src="images/il_fullxfull.1795590365_gngb.jpg"/></div>
                                  <div className="btn_main">
                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                     <div className="seemore_bt"><a href="#">See More</a></div>
@@ -32,9 +32,9 @@ export default function Bouquets () {
                            </div>
                            <div className="col-lg-4 col-sm-4">
                               <div className="box_main">
-                                 <h4 className="shirt_text">Woman Scart</h4>
-                                 <p className="price_text">Price  <span style={{color: '#262626'}}>$ 30</span></p>
-                                 <div className="tshirt_img"><img src="images/women-clothes-img.png"/></div>
+                                 <h4 className="shirt_text">Yellow Rose</h4>
+                                 <p className="price_text">Price  <span style={{color: '#262626'}}>£ 30</span></p>
+                                 <div className="tshirt_img"><img src="images/yellow-crepe-paper-rose-flower.jpg"/></div>
                                  <div className="btn_main">
                                     <div className="buy_bt"><a href="#">Buy Now</a></div>
                                     <div className="seemore_bt"><a href="#">See More</a></div>
