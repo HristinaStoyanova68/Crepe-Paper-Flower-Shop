@@ -88,7 +88,7 @@ export default function Header () {
                         <ul>
                            <li><a href="#">
                               <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-                              <span className="padding_10">Basket</span></a>
+                              <span className="padding_10">Shopping Cart</span></a>
                            </li>
                            <li><a href="#">
                               <i className="fa fa-user" aria-hidden="true"></i>
