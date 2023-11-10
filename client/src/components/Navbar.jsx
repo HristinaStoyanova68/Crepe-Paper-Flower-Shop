@@ -1,6 +1,5 @@
 export default function Navbar() {
     return (
-        <>
             <div className="container">
                 <div className="header_section_top">
                     <div className="row">
@@ -18,6 +17,5 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        </>
     );
 }
