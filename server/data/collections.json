@@ -1,0 +1,80 @@
+{
+    "bouquets": {
+        "item1": {
+            "_id": "item1",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 5,
+            "soldAmount": 2
+        },
+        "item2": {
+            "_id": "item2",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 7,
+            "soldAmount": 4
+        },
+        "item3": {
+            "_id": "item3",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 9,
+            "soldAmount": 6
+        }
+    },
+    "decoration": {
+        "item4": {
+            "_id": "item4",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 5,
+            "soldAmount": 2
+        },
+        "item5": {
+            "_id": "item5",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 7,
+            "soldAmount": 4
+        },
+        "item6": {
+            "_id": "item6",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 9,
+            "soldAmount": 6
+        }        
+    },
+    "giftBoxes": {
+        "item7": {
+            "_id": "item7",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 5,
+            "soldAmount": 2
+        },
+        "item8": {
+            "_id": "item8",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 7,
+            "soldAmount": 4
+        },
+        "item9": {
+            "_id": "item9",
+            "name": "name",
+            "description": "description",
+            "imageUrl": "imageUrl",
+            "price": 9,
+            "soldAmount": 6
+        }       
+    }
+}
