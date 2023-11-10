@@ -1,5 +1,3 @@
-import HeaderSection from './HeaderSection';
-import LogoSection from './LogoSection';
 
 
 export default function HomePage() {
@@ -9,9 +7,9 @@ export default function HomePage() {
     return (
         <>
 
-            <LogoSection />
+            
 
-            <HeaderSection />
+            
 
 
             <div className="banner_section layout_padding">
