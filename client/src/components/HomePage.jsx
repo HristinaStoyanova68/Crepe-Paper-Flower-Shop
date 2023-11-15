@@ -1,5 +1,4 @@
 
-
 export default function HomePage() {
     return (
         <div className="banner_section layout_padding">
@@ -10,7 +9,7 @@ export default function HomePage() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <h1 className="banner_taital">bouquets<br />collection</h1>
-                                    <div className="buynow_bt"><a href="#">Preview</a></div>
+                                    <div className="buynow_bt"><a href="/bouquets">View</a></div>
                                 </div>
                             </div>
                         </div>
@@ -18,7 +17,7 @@ export default function HomePage() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <h1 className="banner_taital">decoration<br />collection</h1>
-                                    <div className="buynow_bt"><a href="#">Preview</a></div>
+                                    <div className="buynow_bt"><a href="/decorations">View</a></div>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +25,7 @@ export default function HomePage() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <h1 className="banner_taital">gift boxes<br />collection</h1>
-                                    <div className="buynow_bt"><a href="#">Preview</a></div>
+                                    <div className="buynow_bt"><a href="/gift-boxes">View</a></div>
                                 </div>
                             </div>
                         </div>

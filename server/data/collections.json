@@ -1,80 +1,89 @@
 {
     "bouquets": {
         "item1": {
+            "collectionName": "Bouquets Collection",
             "_id": "item1",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Yellow rose",
+            "description": "A soft yellow rose for your loved ones",
+            "imageUrl": "images/collections/bouquets/yellow-crepe-paper-rose-flower.jpg",
             "price": 5,
             "soldAmount": 2
         },
         "item2": {
+            "collectionName": "Bouquets Collection",
             "_id": "item2",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Bouquet of peonies",
+            "description": "Bouquet of peonies for your loved ones",
+            "imageUrl": "images/collections/bouquets/il_fullxfull.1795590365_gngb.jpg",
             "price": 7,
             "soldAmount": 4
         },
         "item3": {
+            "collectionName": "Bouquets Collection",
             "_id": "item3",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Bouquet of spring flowers",
+            "description": "Bouquet of spring flowers for your loved ones",
+            "imageUrl": "images/collections/bouquets/16638917945_bc1809faeb.jpg",
             "price": 9,
             "soldAmount": 6
         }
     },
-    "decoration": {
+    "decorations": {
         "item4": {
+            "collectionName": "Decoration Collection",
             "_id": "item4",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Wedding chair decor",
+            "description": "Wedding chair decor",
+            "imageUrl": "images/collections/decorations/wedding-chairs.jpg",
             "price": 5,
             "soldAmount": 2
         },
         "item5": {
+            "collectionName": "Decoration Collection",
             "_id": "item5",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Wall decor",
+            "description": "Wall decor",
+            "imageUrl": "images/collections/decorations/wall-flowers.jpg",
             "price": 7,
             "soldAmount": 4
         },
         "item6": {
+            "collectionName": "Decoration Collection",
             "_id": "item6",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Large decor",
+            "description": "Large decor",
+            "imageUrl": "images/collections/decorations/8-march.jpg",
             "price": 9,
             "soldAmount": 6
-        }        
+        }
     },
-    "giftBoxes": {
+    "gift-boxes": {
         "item7": {
+            "collectionName": "Gift Boxes Collection",
             "_id": "item7",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Boxes",
+            "description": "Boxes",
+            "imageUrl": "images/collections/giftBoxes/boxes.jpg",
             "price": 5,
             "soldAmount": 2
         },
         "item8": {
+            "collectionName": "Gift Boxes Collection",
             "_id": "item8",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Small boxes",
+            "description": "Small boxes",
+            "imageUrl": "images/collections/giftBoxes/small-boxes.jpg",
             "price": 7,
             "soldAmount": 4
         },
         "item9": {
+            "collectionName": "Gift Boxes Collection",
             "_id": "item9",
-            "name": "name",
-            "description": "description",
-            "imageUrl": "imageUrl",
+            "name": "Paper-Orchid boxes",
+            "description": "Paper-Orchid boxes",
+            "imageUrl": "images/collections/giftBoxes/Paper-Orchid-boxes.jpg",
             "price": 9,
             "soldAmount": 6
-        }       
+        }
     }
 }

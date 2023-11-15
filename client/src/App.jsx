@@ -5,9 +5,7 @@ import Footer from "./components/Footer";
 import CopyRight from "./components/CopyRight";
 import HomePage from './components/HomePage';
 import HeaderSection from './components/HeaderSection';
-// import Bouquets from "./components/Bouquets";
-// import Decoration from "./components/Decoration";
-// import GiftBoxes from "./components/GiftBoxes";
+import Collections from './components/Collections';
 
 function App() {
 
@@ -22,8 +20,13 @@ function App() {
 
         <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='/bouquets' element={<Collections />} />
+          <Route path='/decorations' element={<Collections />} />
+          <Route path='/gift-boxes' element={<Collections />} />
         </Routes>
       </div>
+
+      
 
       <Footer />
 
