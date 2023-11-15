@@ -1,2 +1,2 @@
-# React-Project-in-progress
+# Crepe Paper Flower Shop
 SoftUni Course Project
