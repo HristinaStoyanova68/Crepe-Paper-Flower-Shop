@@ -23,6 +23,7 @@ export default function Collections() {
         setCollectionName(c => c = collection[0]?.collectionName);
     }, [collection]);
 
+    console.log(collection);
     return (
         <div className="fashion_section">
 
