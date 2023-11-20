@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 
-import * as itemsService from '../services/itemsService';
+import * as itemsService from '../../services/itemsService';
 
 export default function Collections() {
     const [collection, setCollection] = useState([]);
     const [currCollectionName, setCollectionName] = useState('');
 
     const locationName = useLocation().pathname;
-    console.log(locationName);
 
     useEffect(() => {
         itemsService.getCollection(locationName)
@@ -23,7 +22,6 @@ export default function Collections() {
         setCollectionName(c => c = collection[0]?.collectionName);
     }, [collection]);
 
-    console.log(collection);
     return (
         <div className="fashion_section">
 
@@ -44,7 +42,7 @@ export default function Collections() {
                                                 <div className="tshirt_img"><img src={item.imageUrl} /></div>
                                                 <div className="btn_main">
                                                     <div className="buy_bt"><Link to="#">Buy Now</Link></div>
-                                                    <div className="seemore_bt"><Link to="#">See More</Link></div>
+                                                    <div className="seemore_bt"><Link to={`${locationName}/${item._id}/details`}>See More</Link></div>
                                                 </div>
                                             </div>
                                         </div>

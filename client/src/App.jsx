@@ -5,9 +5,12 @@ import Footer from "./components/Footer";
 import CopyRight from "./components/CopyRight";
 import HomePage from './components/HomePage';
 import HeaderSection from './components/HeaderSection';
-import Collections from './components/Collections';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
+import ItemDetails from './components/item-details/ItemDetails';
+import Collections from './components/collections/Collections';
+import ItemCreate from './components/item-create/ItemCreate';
+import ItemEdit from './components/item-edit/ItemEdit';
 
 function App() {
 
@@ -27,6 +30,9 @@ function App() {
           <Route path='/gift-boxes' element={<Collections />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/:collectionName/:itemId/details' element={<ItemDetails />} />
+          <Route path='/create' element={<ItemCreate />} />
+          <Route path='/edit' element={<ItemEdit />} />
         </Routes>
       </div>
 

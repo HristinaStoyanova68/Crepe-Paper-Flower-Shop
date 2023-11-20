@@ -16,6 +16,7 @@ export default function Navbar() {
                             <ul>
                                 <li><Link to="#">Best Sellers</Link></li>
                                 <li><Link to="#">New Releases</Link></li>
+                                <li><Link to="/create">Create</Link></li>
                                 <li><Link to="/login">Login</Link></li>
                                 <li><Link to="/register">Register</Link></li>
                                 <li><Link to="/logout">Logout</Link></li>
