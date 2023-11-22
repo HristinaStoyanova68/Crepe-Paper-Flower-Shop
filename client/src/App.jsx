@@ -22,7 +22,6 @@ function App() {
     const [auth, setAuth] = useState({});
 
     const loginSubmitHandler = async (values) => {
-        console.log(values);
         const {
             accessToken,
             email,
@@ -40,7 +39,12 @@ function App() {
         navigate(Path.Home);
     };
 
+    const registerSubmitHandler = async (values) => {
+        console.log(values);
+    }
+
     const values = {
+        registerSubmitHandler,
         loginSubmitHandler,
         username: auth.username,
         email: auth.email,
