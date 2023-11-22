@@ -41,12 +41,29 @@ function App() {
 
     const registerSubmitHandler = async (values) => {
         console.log(values);
+        const {
+            accessToken,
+            email,
+            username,
+            _id,
+        } = await authService.register(values.email, values.password);
+
+        //TODO validations for repeating password
+
+        setAuth({
+            accessToken,
+            email,
+            username,
+            _id,
+        });
+
+        navigate(Path.Home);
     }
 
     const values = {
         registerSubmitHandler,
         loginSubmitHandler,
-        username: auth.username,
+        username: auth.username || auth.email,
         email: auth.email,
         isAuthenticated: !!auth.username,
     }
