@@ -18,4 +18,8 @@ export const register = (email, password) => {
     });
 
     return result;
+};
+
+export const logout = async () => {
+    await request.get(`${baseUrl}/logout`);
 }

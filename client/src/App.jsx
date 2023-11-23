@@ -12,8 +12,9 @@ import HomePage from './components/HomePage';
 import HeaderSection from './components/HeaderSection';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
-import ItemDetails from './components/item-details/ItemDetails';
+import Logout from './components/logout/Logout';
 import Collections from './components/collections/Collections';
+import ItemDetails from './components/item-details/ItemDetails';
 import ItemCreate from './components/item-create/ItemCreate';
 import ItemEdit from './components/item-edit/ItemEdit';
 
@@ -22,50 +23,41 @@ function App() {
     const [auth, setAuth] = useState({});
 
     const loginSubmitHandler = async (values) => {
-        const {
-            accessToken,
-            email,
-            username,
-            _id,
-        } = await authService.login(values.email, values.password);
+        const result = await authService.login(values.email, values.password);
 
-        setAuth({
-            accessToken,
-            email,
-            username,
-            _id,
-        });
+        setAuth(result);
+
+        localStorage.setItem('accessToken', result.accessToken);
 
         navigate(Path.Home);
     };
 
     const registerSubmitHandler = async (values) => {
-        console.log(values);
-        const {
-            accessToken,
-            email,
-            username,
-            _id,
-        } = await authService.register(values.email, values.password);
+        // console.log(values);
+        const result = await authService.register(values.email, values.password);
 
         //TODO validations for repeating password
 
-        setAuth({
-            accessToken,
-            email,
-            username,
-            _id,
-        });
+        setAuth(result);
 
+        localStorage.setItem('accessToken', result.accessToken);
+
+        navigate(Path.Home);
+    };
+
+    const logoutHandler = () => {
+        setAuth({});
+        localStorage.removeItem('accessToken');
         navigate(Path.Home);
     }
 
     const values = {
         registerSubmitHandler,
         loginSubmitHandler,
+        logoutHandler,
         username: auth.username || auth.email,
         email: auth.email,
-        isAuthenticated: !!auth.email,
+        isAuthenticated: !!auth.accessToken,
     }
 
     return (
@@ -85,6 +77,7 @@ function App() {
                     <Route path='/:collectionName/:itemId/details' element={<ItemDetails />} />
                     <Route path='/create' element={<ItemCreate />} />
                     <Route path='/edit' element={<ItemEdit />} />
+                    <Route path={Path.Logout} element={<Logout />} />
                 </Routes>
             </div>
 
