@@ -2,7 +2,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 import * as authService from './services/authService';
-import AuthContext from './contexts/authContext';
+import { AuthProvider } from './contexts/authContext';
 import Path from './paths';
 
 import Navbar from './components/Navbar';
@@ -20,7 +20,11 @@ import ItemEdit from './components/item-edit/ItemEdit';
 
 function App() {
     const navigate = useNavigate();
-    const [auth, setAuth] = useState({});
+    const [auth, setAuth] = useState(() => {
+        localStorage.removeItem('accessToken');
+
+        return {};
+    });
 
     const loginSubmitHandler = async (values) => {
         const result = await authService.login(values.email, values.password);
@@ -61,7 +65,7 @@ function App() {
     }
 
     return (
-        <AuthContext.Provider value={values}>
+        <AuthProvider value={values}>
             <div className="banner_bg_main">
                 <Navbar />
 
@@ -84,7 +88,7 @@ function App() {
             <Footer />
 
             <CopyRight />
-        </AuthContext.Provider>
+        </AuthProvider>
     );
 }
 

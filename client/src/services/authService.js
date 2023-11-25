@@ -1,4 +1,4 @@
-import * as request from '../components/lib/request';
+import * as request from '../lib/request';
 
 const baseUrl = 'http://localhost:3030/users';
 
