@@ -1,5 +1,6 @@
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+
+import usePersistedState from './hooks/usePersistedState';
 
 import * as authService from './services/authService';
 import { AuthProvider } from './contexts/authContext';
@@ -21,11 +22,7 @@ import AuthGuard from './components/guards/AuthGuard';
 
 function App() {
     const navigate = useNavigate();
-    const [auth, setAuth] = useState(() => {
-        localStorage.removeItem('accessToken');
-
-        return {};
-    });
+    const [auth, setAuth] = usePersistedState('auth', {});
 
     const loginSubmitHandler = async (values) => {
         const result = await authService.login(values.email, values.password);
