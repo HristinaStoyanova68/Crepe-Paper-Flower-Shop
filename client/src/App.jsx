@@ -71,9 +71,9 @@ function App() {
 
                 <Routes>
                     <Route path={Path.Home} element={<HomePage />} />
-                    <Route path='/bouquets' element={<Collections />} />
-                    <Route path='/decorations' element={<Collections />} />
-                    <Route path='/gift-boxes' element={<Collections />} />
+                    <Route path={Path.Collection_Bouquets} element={<Collections />} />
+                    <Route path={Path.Collection_Decorations} element={<Collections />} />
+                    <Route path={Path.Collection_Gift_Boxes} element={<Collections />} />
                     <Route path={Path.Login} element={<Login loginSubmitHandler={loginSubmitHandler} />} />
                     <Route path='/register' element={<Register />} />
                     <Route path='/:collectionName/:itemId/details' element={<ItemDetails />} />

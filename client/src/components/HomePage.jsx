@@ -26,7 +26,7 @@ export default function HomePage() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <h1 className="banner_taital">gift boxes<br />collection</h1>
-                                    <div className="buynow_bt"><Link to="/gift-boxes">View</Link></div>
+                                    <div className="buynow_bt"><Link to="/gift_boxes">View</Link></div>
                                 </div>
                             </div>
                         </div>
