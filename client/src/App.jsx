@@ -17,6 +17,7 @@ import Collections from './components/collections/Collections';
 import ItemDetails from './components/item-details/ItemDetails';
 import ItemCreate from './components/item-create/ItemCreate';
 import ItemEdit from './components/item-edit/ItemEdit';
+import AuthGuard from './components/guards/AuthGuard';
 
 function App() {
     const navigate = useNavigate();
@@ -76,12 +77,15 @@ function App() {
                     <Route path='/bouquets' element={<Collections />} />
                     <Route path='/decorations' element={<Collections />} />
                     <Route path='/gift-boxes' element={<Collections />} />
-                    <Route path='/login' element={<Login loginSubmitHandler={loginSubmitHandler} />} />
+                    <Route path={Path.Login} element={<Login loginSubmitHandler={loginSubmitHandler} />} />
                     <Route path='/register' element={<Register />} />
                     <Route path='/:collectionName/:itemId/details' element={<ItemDetails />} />
-                    <Route path='/create' element={<ItemCreate />} />
-                    <Route path='/edit' element={<ItemEdit />} />
-                    <Route path={Path.Logout} element={<Logout />} />
+
+                    <Route element={<AuthGuard />}>
+                        <Route path='/create' element={<ItemCreate />} />
+                        <Route path='/edit' element={<ItemEdit />} />
+                        <Route path={Path.Logout} element={<Logout />} />
+                    </Route>
                 </Routes>
             </div>
 
