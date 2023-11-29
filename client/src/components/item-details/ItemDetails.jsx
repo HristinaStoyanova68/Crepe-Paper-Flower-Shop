@@ -38,10 +38,10 @@ export default function ItemDetails() {
 
                     {/* <!--Edit and Delete are only for creator--> */}
                     <div className={styles["action-buttons"]}>
-                    {userId === item._ownerId &&
+                    {isAuthenticated && userId === item._ownerId &&
                             <>
-                                <Link to="/edit" className={styles["edit-btn"]}>Edit</Link>
-                                <Link to="/remove" className={styles["delete-btn"]}>Delete</Link>
+                                <Link to="/:collectionName/:itemId/details/edit" className={styles["edit-btn"]}>Edit</Link>
+                                <Link to="/:collectionName/:itemId/details/remove" className={styles["delete-btn"]}>Delete</Link>
                             </>
                         } 
                     
@@ -49,7 +49,7 @@ export default function ItemDetails() {
                         {isAuthenticated && userId !== item._ownerId &&
 
                             <>
-                                <Link to="/like" className={styles["like-btn"]}>Like</Link>
+                                <Link to="/:collectionName/:itemId/details/like" className={styles["like-btn"]}>Like</Link>
                             </>
                         }
                     </div>

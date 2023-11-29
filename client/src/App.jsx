@@ -79,12 +79,12 @@ function App() {
                     <Route path={Path.Collection_Decorations} element={<Collections />} />
                     <Route path={Path.Collection_Gift_Boxes} element={<Collections />} />
                     <Route path={Path.Login} element={<Login loginSubmitHandler={loginSubmitHandler} />} />
-                    <Route path='/register' element={<Register />} />
-                    <Route path='/:collectionName/:itemId/details' element={<ItemDetails />} />
+                    <Route path={Path.Register} element={<Register />} />
+                    <Route path={Path.ItemDetails} element={<ItemDetails />} />
 
                     <Route element={<AuthGuard />}>
-                        <Route path='/create' element={<ItemCreate />} />
-                        <Route path='/edit' element={<ItemEdit />} />
+                        <Route path={Path.ItemCreate} element={<ItemCreate />} />
+                        <Route path={Path.ItemEdit} element={<ItemEdit />} />
                         <Route path={Path.Logout} element={<Logout />} />
                     </Route>
                 </Routes>

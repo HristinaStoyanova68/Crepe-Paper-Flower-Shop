@@ -19,10 +19,7 @@ export default function ItemCreate() {
 
     const createItemSubmitHandler = async (values) => {
 
-
         const collectionName = values.collectionName;
-        // console.log(itemData);
-        console.log(collectionName);
 
         try {
             await itemService.create(collectionName, values);
