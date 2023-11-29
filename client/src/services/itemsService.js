@@ -34,6 +34,6 @@ export const create = async (collectionName, itemData) => {
         soldAmount: 0,
     };
     const result = await request.post(`${baseUrl}/${collectionName}`, data);
-    
+    console.log(result);
     return result;
 };

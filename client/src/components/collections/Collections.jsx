@@ -8,7 +8,7 @@ export default function Collections() {
     const [currCollectionName, setCollectionName] = useState('');
 
     const locationName = useLocation().pathname;
-    console.log(locationName);
+    // console.log(locationName);
 
     useEffect(() => {
         itemsService.getCollection(locationName)

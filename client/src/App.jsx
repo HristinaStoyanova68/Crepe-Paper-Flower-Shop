@@ -31,7 +31,8 @@ function App() {
 
         localStorage.setItem('accessToken', result.accessToken);
 
-        navigate(Path.Home);
+        // navigate(Path.Home);
+        navigate(-1);
     };
 
     const registerSubmitHandler = async (values) => {
@@ -59,8 +60,11 @@ function App() {
         logoutHandler,
         username: auth.username || auth.email,
         email: auth.email,
+        userId: auth._id,
         isAuthenticated: !!auth.accessToken,
     }
+
+    // console.log(values.userId);
 
     return (
         <AuthProvider value={values}>
