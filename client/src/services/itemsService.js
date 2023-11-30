@@ -43,4 +43,9 @@ export const edit = async (collectionName, itemId, itemData) => {
     const result = await request.put(`${baseUrl}/${collectionName}/${itemId}`, itemData);
 
     return result;
+};
+
+export const remove = async (collectionName, itemId) => {
+
+    await request.remove(`${baseUrl}/${collectionName}/${itemId}`);
 }

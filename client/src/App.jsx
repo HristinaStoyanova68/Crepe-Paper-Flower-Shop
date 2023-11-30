@@ -19,6 +19,7 @@ import ItemDetails from './components/item-details/ItemDetails';
 import ItemCreate from './components/item-create/ItemCreate';
 import ItemEdit from './components/item-edit/ItemEdit';
 import AuthGuard from './components/guards/AuthGuard';
+import ItemRemove from './components/item-remove/ItemRemove';
 
 function App() {
     const navigate = useNavigate();
@@ -85,6 +86,7 @@ function App() {
                     <Route element={<AuthGuard />}>
                         <Route path={Path.ItemCreate} element={<ItemCreate />} />
                         <Route path={Path.ItemEdit} element={<ItemEdit />} />
+                        <Route path={Path.ItemDelete} element={<ItemRemove />} />
                         <Route path={Path.Logout} element={<Logout />} />
                     </Route>
                 </Routes>

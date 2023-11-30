@@ -43,7 +43,7 @@ export default function ItemDetails() {
                     {isAuthenticated && userId === item._ownerId &&
                             <>
                                 <Link to={pathToUrl(Path.ItemEdit, { collectionName, itemId })} className={styles["edit-btn"]}>Edit</Link>
-                                <Link to="/:collectionName/:itemId/details/remove" className={styles["delete-btn"]}>Delete</Link>
+                                <Link to={pathToUrl(Path.ItemDelete, { collectionName, itemId })} className={styles["delete-btn"]}>Delete</Link>
                             </>
                         } 
                     
