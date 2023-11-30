@@ -9,7 +9,7 @@ const Path = {
     ItemCreate: '/create',
     ItemDetails: '/:collectionName/:itemId/details',
     ItemEdit: "/:collectionName/:itemId/edit",
-    ItemDelete: "/:collectionName/:itemId/remove",
+    ItemRemove: "/:collectionName/:itemId/remove",
 };
 
 export default Path;

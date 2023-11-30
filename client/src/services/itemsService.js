@@ -34,12 +34,11 @@ export const create = async (collectionName, itemData) => {
         soldAmount: 0,
     };
     const result = await request.post(`${baseUrl}/${collectionName}`, data);
-    console.log(result);
+
     return result;
 };
 
 export const edit = async (collectionName, itemId, itemData) => {
-    // console.log(itemData);
     const result = await request.put(`${baseUrl}/${collectionName}/${itemId}`, itemData);
 
     return result;

@@ -22,13 +22,17 @@ export default function ItemRemove() {
     const removeItemSubmitHandler = async(e) => {
         e.preventDefault();
 
-        try {
-            await itemService.remove(collectionName, itemId);
+        const hasConfirmed = confirm(`Are you sure you want to delete ${item.name} ?`);
 
-            navigate(Path.Home);
-        } catch (err) {
-            console.log(err);
-        }
+        if (hasConfirmed) {
+            try {
+                await itemService.remove(collectionName, itemId);
+    
+                navigate(Path.Home);
+            } catch (err) {
+                console.log(err);
+            }
+        }       
     }
 
     return (
@@ -40,14 +44,14 @@ export default function ItemRemove() {
                         type="text"
                         name="collectionName"
                         placeholder="collectionName"
-                        value={item.collectionName}
+                        defaultValue={item.collectionName}
                         disabled
                     />
                     <input
                         type="text"
                         name="name"
                         placeholder="name"
-                        value={item.name}
+                        defaultValue={item.name}
                         disabled
 
                     />
@@ -55,7 +59,7 @@ export default function ItemRemove() {
                         type="text"
                         name="price"
                         placeholder="price"
-                        value={item.price}
+                        defaultValue={item.price}
                         disabled
 
                     />
@@ -63,7 +67,7 @@ export default function ItemRemove() {
                         type="text"
                         name="imageUrl"
                         placeholder="Image URL"
-                        value={item.imageUrl}
+                        defaultValue={item.imageUrl}
                         disabled
 
                     />
@@ -72,7 +76,7 @@ export default function ItemRemove() {
                         placeholder="description"
                         rows="10"
                         cols="50"
-                        value={item.description}
+                        defaultValue={item.description}
                         disabled
                     ></textarea>
                     <button type="submit">Delete</button>

@@ -86,7 +86,7 @@ function App() {
                     <Route element={<AuthGuard />}>
                         <Route path={Path.ItemCreate} element={<ItemCreate />} />
                         <Route path={Path.ItemEdit} element={<ItemEdit />} />
-                        <Route path={Path.ItemDelete} element={<ItemRemove />} />
+                        <Route path={Path.ItemRemove} element={<ItemRemove />} />
                         <Route path={Path.Logout} element={<Logout />} />
                     </Route>
                 </Routes>
