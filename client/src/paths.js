@@ -8,7 +8,7 @@ const Path = {
     Collection_Gift_Boxes: '/gift_boxes',
     ItemCreate: '/create',
     ItemDetails: '/:collectionName/:itemId/details',
-    ItemEdit: "/:collectionName/:itemId/details/edit",
+    ItemEdit: "/:collectionName/:itemId/edit",
 };
 
 export default Path;

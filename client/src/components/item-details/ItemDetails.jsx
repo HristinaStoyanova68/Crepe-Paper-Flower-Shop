@@ -6,6 +6,8 @@ import styles from './ItemDetails.module.css';
 
 import * as itemService from '../../services/itemsService';
 import AuthContext from '../../contexts/authContext';
+import { pathToUrl } from '../../utils/pathUtils';
+import Path from '../../paths';
 
 export default function ItemDetails() {
     const { userId, isAuthenticated } = useContext(AuthContext);
@@ -16,7 +18,7 @@ export default function ItemDetails() {
     useEffect(() => {
         itemService.getItem(collectionName, itemId)
             .then(setItem)
-            .catch(err => console.log(err))           
+            .catch(err => console.log(err));           
     }, [itemId]);
     
     return (
@@ -40,7 +42,7 @@ export default function ItemDetails() {
                     <div className={styles["action-buttons"]}>
                     {isAuthenticated && userId === item._ownerId &&
                             <>
-                                <Link to="/:collectionName/:itemId/details/edit" className={styles["edit-btn"]}>Edit</Link>
+                                <Link to={pathToUrl(Path.ItemEdit, { collectionName, itemId })} className={styles["edit-btn"]}>Edit</Link>
                                 <Link to="/:collectionName/:itemId/details/remove" className={styles["delete-btn"]}>Delete</Link>
                             </>
                         } 
