@@ -85,30 +85,3 @@
     color: #f26522;
 }
 
-#main_slider a.carousel-control-next {
-    right: 615px;
-    top: 105%;
-}
-
-#main_slider a.carousel-control-prev {
-    left: 615px;
-    top: 105%;
-}
-
-#main_slider .carousel-control-next,
-#main_slider .carousel-control-prev {
-    width: 55px;
-    height: 55px;
-    background-color: #30302e;
-    opacity: 1;
-    font-size: 30px;
-    color: #ffffff;
-}
-
-#main_slider .carousel-control-next:focus,
-#main_slider .carousel-control-next:hover,
-#main_slider .carousel-control-prev:focus,
-#main_slider .carousel-control-prev:hover {
-    color: #fff;
-    background-color: #f26522;
-}
