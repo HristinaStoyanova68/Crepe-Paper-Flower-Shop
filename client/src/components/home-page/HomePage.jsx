@@ -31,12 +31,12 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <Link className="carousel-control-prev" to="#my_slider" role="button" data-slide="prev">
+                    <a className="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
                         <i className="fa fa-angle-left"></i>
-                    </Link>
-                    <Link className="carousel-control-next" to="#my_slider" role="button" data-slide="next">
+                    </a>
+                    <a className="carousel-control-next" href="#my_slider" role="button" data-slide="next">
                         <i className="fa fa-angle-right"></i>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

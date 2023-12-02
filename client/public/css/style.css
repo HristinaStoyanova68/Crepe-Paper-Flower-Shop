@@ -818,33 +818,7 @@ input.mail_bt::placeholder {
 
 /* copyright section start */
 
-.copyright_section {
-    width: 100%;
-    float: left;
-    background-color: #252525;
-    height: auto;
-}
 
-.copyright_text {
-    width: 100%;
-    float: left;
-    color: #ffffff;
-    text-align: center;
-    font-size: 16px;
-    margin-block: 10px;
-}
-
-.copyright_text a {
-    color: #ffffff;
-}
-
-.copyright_text a:hover {
-    color: #f26522;
-}
-
-.margin_top90 {
-    margin-top: 90px;
-}
 
 
 /* copyright section end */
