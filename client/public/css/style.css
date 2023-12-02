@@ -201,7 +201,7 @@ button {
 }
 
 .layout_padding {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 0px;
 }
 
@@ -981,7 +981,7 @@ input.mail_bt::placeholder {
     color: #ffffff;
     text-align: center;
     font-size: 16px;
-    margin: 30px 0 20px 0;
+    margin-block: 10px;
 }
 
 .copyright_text a {
