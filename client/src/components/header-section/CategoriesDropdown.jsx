@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Path from '../paths';
+import Path from '../../paths';
 
 export default function CategoriesDropdown() {
     return (

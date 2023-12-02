@@ -17,10 +17,7 @@ const editFormKeys = {
 
 export default function ItemEdit() {
     const navigate = useNavigate();
-    // const [item, setItem] = useState({});
     const { collectionName, itemId } = useParams();
-    console.log(collectionName);
-    console.log(itemId);
     const [item, setItem] = useState({
         [editFormKeys.CollectionName]: '',
         [editFormKeys.Name]: '',

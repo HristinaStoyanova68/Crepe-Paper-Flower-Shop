@@ -6,11 +6,11 @@ import * as authService from './services/authService';
 import { AuthProvider } from './contexts/authContext';
 import Path from './paths';
 
-import Navbar from './components/Navbar';
-import Footer from "./components/Footer";
-import CopyRight from "./components/CopyRight";
-import HomePage from './components/HomePage';
-import HeaderSection from './components/HeaderSection';
+import Navbar from './components/navbar/Navbar';
+import Footer from "./components/footer/Footer";
+import CopyRight from "./components/footer/CopyRight";
+import HomePage from './components/home-page/HomePage';
+import HeaderSection from './components/header-section/HeaderSection';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
 import Logout from './components/logout/Logout';
