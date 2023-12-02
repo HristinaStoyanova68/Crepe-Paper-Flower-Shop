@@ -13,6 +13,7 @@ const Path = {
     ItemEdit: '/:collectionName/:itemId/edit',
     ItemRemove: '/:collectionName/:itemId/remove',
     NewReleases: '/new-releases',
+    MyProfile: '/my-profile',
 };
 
 export default Path;
