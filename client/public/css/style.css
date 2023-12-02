@@ -227,52 +227,9 @@ button {
 
 /* header top section start */
 
-.header_section_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    float: left;
-    background-color: #2b2a29;
-    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
-    height: auto;
-    padding: 10px 50px;
-}
 
-.home_logo p {
-    color: #f1f1f1;
-}
 
-.custom_menu {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
 
-.custom_menu ul {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-}
-
-.custom_menu li {
-    float: left;
-    font-size: 16px;
-    color: #f1f1f1;
-    padding: 6px 10px 0px 10px;
-}
-
-.custom_menu li:nth-child(2) {
-    padding-right: 3em;
-}
-
-.custom_menu li a {
-    color: #f1f1f1;
-}
-
-.custom_menu li a:hover {
-    color: #f26522;
-}
 
 
 /* header top section end */

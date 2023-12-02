@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../../contexts/authContext';
 
-
+import styles from './Navbar.module.css';
 
 export default function Navbar() {
     const {
@@ -12,14 +12,14 @@ export default function Navbar() {
 
     return (
         <div className="container">
-            <div className="header_section_top">
-                <div className="home_logo">
+            <div className={styles["header_section_top"]}>
+                <div className={styles["home_logo"]}>
                     {/* <img src="" alt="logoImage" /> */}
                     <p>Home</p>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
-                        <div className="custom_menu">
+                        <div className={styles["custom_menu"]}>
                             <ul>
                                 <li><Link to="#">New Releases</Link></li>
                                 {isAuthenticated &&
