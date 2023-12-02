@@ -36,8 +36,6 @@ export default function ItemDetails() {
                         </p>
                     </div>
 
-                    <h3>Price:<span className={styles.likes}> £{item.price}</span></h3>
-
                     {/* <!--Edit and Delete are only for creator--> */}
                     <div className={styles["action-buttons"]}>
                     {isAuthenticated && userId === item._ownerId &&

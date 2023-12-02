@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 
 import * as itemsService from '../../services/itemsService';
+import styles from './Collections.module.css';
 
 export default function Collections() {
     const [collection, setCollection] = useState([]);
@@ -24,9 +25,9 @@ export default function Collections() {
     }, [collection]);
 
     return (
-        <div className="fashion_section">
+        <div className={styles["fashion_section"]}>
 
-            <h1 className="fashion_taital">{currCollectionName}</h1>
+            <h1 className={styles["fashion_taital"]}>{currCollectionName}</h1>
 
             <div id="main_slider" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
@@ -34,30 +35,22 @@ export default function Collections() {
                     {collection.map((item, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={item._id}>
                             <div className="container">
-                                <div className="fashion_section_2">
+                                <div className={styles["fashion_section_2"]}>
                                     <div className="row" style={{justifyContent: 'center'}}>
                                         <div className="col-lg-4 col-sm-4" style={{maxHeight: '353px'}}>
-                                            <div className="box_main">
-                                                <h4 className="shirt_text">{item.name}</h4>
-                                                <p className="price_text">Price  <span style={{ color: '#262626' }}>£ {item.price}</span></p>
-                                                <div className="tshirt_img"><img src={item.imageUrl} /></div>
-                                                <div className="btn_main">
-                                                    <div className="buy_bt"><Link to="#">Buy Now</Link></div>
-                                                    <div className="seemore_bt"><Link to={`${locationName}/${item._id}/details`}>See More</Link></div>
+                                            <div className={styles["box_main"]}>
+                                                <h4 className={styles["shirt_text"]}>{item.name}</h4>
+                                                <div className={styles["tshirt_img"]}><img src={item.imageUrl} /></div>
+                                                <div className={styles["btn_main"]}>
+                                                    <div className={styles["seemore_bt"]}><Link to={`${locationName}/${item._id}/details`}>See More</Link></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        {/* </div> */}
                         </div>
-                        //   <CategoryItem
-                        //      key={item._id}
-                        //      {...item}
-                        //   />
                     ))}
-
                 </div>
                 <a className="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
                     <i className="fa fa-angle-left"></i>
