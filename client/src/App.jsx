@@ -1,8 +1,5 @@
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-import usePersistedState from './hooks/usePersistedState';
-
-import * as authService from './services/authService';
 import { AuthProvider } from './contexts/authContext';
 import Path from './paths';
 
@@ -22,53 +19,9 @@ import AuthGuard from './components/guards/AuthGuard';
 import ItemRemove from './components/item-remove/ItemRemove';
 
 function App() {
-    const navigate = useNavigate();
-    const [auth, setAuth] = usePersistedState('auth', {});
-
-    const loginSubmitHandler = async (values) => {
-        const result = await authService.login(values.email, values.password);
-
-        setAuth(result);
-
-        localStorage.setItem('accessToken', result.accessToken);
-
-        // navigate(Path.Home);
-        navigate(-1);
-    };
-
-    const registerSubmitHandler = async (values) => {
-        // console.log(values);
-        const result = await authService.register(values.email, values.password);
-
-        //TODO validations for repeating password
-
-        setAuth(result);
-
-        localStorage.setItem('accessToken', result.accessToken);
-
-        navigate(Path.Home);
-    };
-
-    const logoutHandler = () => {
-        setAuth({});
-        localStorage.removeItem('accessToken');
-        navigate(Path.Home);
-    }
-
-    const values = {
-        registerSubmitHandler,
-        loginSubmitHandler,
-        logoutHandler,
-        username: auth.username || auth.email,
-        email: auth.email,
-        userId: auth._id,
-        isAuthenticated: !!auth.accessToken,
-    }
-
-    // console.log(values.userId);
 
     return (
-        <AuthProvider value={values}>
+        <AuthProvider>
             <div className="banner_bg_main">
                 <Navbar />
 
@@ -79,7 +32,7 @@ function App() {
                     <Route path={Path.Collection_Bouquets} element={<Collections />} />
                     <Route path={Path.Collection_Decorations} element={<Collections />} />
                     <Route path={Path.Collection_Gift_Boxes} element={<Collections />} />
-                    <Route path={Path.Login} element={<Login loginSubmitHandler={loginSubmitHandler} />} />
+                    <Route path={Path.Login} element={<Login />} />
                     <Route path={Path.Register} element={<Register />} />
                     <Route path={Path.ItemDetails} element={<ItemDetails />} />
 
