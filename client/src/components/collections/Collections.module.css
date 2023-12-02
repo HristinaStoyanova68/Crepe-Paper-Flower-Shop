@@ -1,10 +1,10 @@
-.fashion_section {
+.collection_section {
     width: 100%;
     float: left;
     padding-bottom: 100px;
 }
 
-.fashion_taital {
+.collection_title {
     width: 100%;
     font-size: 40px;
     color: rgb(207, 227, 146);
@@ -14,7 +14,7 @@
     -webkit-text-stroke: 2.5px #000;
 }
 
-.fashion_section_2 {
+.collection_section_2 {
     width: 100%;
     margin-top: 30px;
 }
@@ -28,7 +28,7 @@
     margin-bottom: 20px;
 }
 
-.shirt_text {
+.item_text {
     width: 100%;
     font-size: 20px;
     color: #30302e;
@@ -37,7 +37,7 @@
     padding-bottom: 5px;
 }
 
-.tshirt_img {
+.item_img {
     width: 100%;
     text-align: center;
     margin: 5px 0px;
@@ -45,13 +45,13 @@
     position: relative;
 }
 
-.tshirt_img::after {
+.item_img::after {
     display: block;
     content: '';
     padding-top: 56.25%;
 }
 
-.tshirt_img img {
+.item_img img {
     display: block;
     width: 100%;
     height: auto;

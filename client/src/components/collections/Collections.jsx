@@ -25,9 +25,9 @@ export default function Collections() {
     }, [collection]);
 
     return (
-        <div className={styles["fashion_section"]}>
+        <div className={styles["collection_section"]}>
 
-            <h1 className={styles["fashion_taital"]}>{currCollectionName}</h1>
+            <h1 className={styles["collection_title"]}>{currCollectionName}</h1>
 
             <div id="main_slider" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
@@ -35,12 +35,12 @@ export default function Collections() {
                     {collection.map((item, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={item._id}>
                             <div className="container">
-                                <div className={styles["fashion_section_2"]}>
+                                <div className={styles["collection_section_2"]}>
                                     <div className="row" style={{justifyContent: 'center'}}>
                                         <div className="col-lg-4 col-sm-4" style={{maxHeight: '353px'}}>
                                             <div className={styles["box_main"]}>
-                                                <h4 className={styles["shirt_text"]}>{item.name}</h4>
-                                                <div className={styles["tshirt_img"]}><img src={item.imageUrl} /></div>
+                                                <h4 className={styles["item_text"]}>{item.name}</h4>
+                                                <div className={styles["item_img"]}><img src={item.imageUrl} /></div>
                                                 <div className={styles["btn_main"]}>
                                                     <div className={styles["seemore_bt"]}><Link to={`${locationName}/${item._id}/details`}>See More</Link></div>
                                                 </div>
