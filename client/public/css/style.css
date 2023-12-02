@@ -335,10 +335,7 @@ button {
     order: 2;
 }
 
-.header_box {
-    order: 2;
-    display: flex;
-}
+
 
 .dropdown,
 .dropleft,
@@ -403,37 +400,9 @@ button {
 
 /* Styles for wrapping the search box end */
 
-.login_menu {
-    display: flex;
-    text-align: right;
-    float: right;
-}
 
-.login_menu ul {
-    margin: 0px;
-    padding: 0px;
-}
 
-.login_menu li {
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding-left: 10px;
-    padding-top: 4px;
-}
 
-.login_menu li a {
-    color: #ffffff;
-}
-
-.login_menu li a:hover {
-    color: #f26522;
-}
-
-.padding_10 {
-    padding-left: 10px;
-}
 
 
 /* flage css start */
