@@ -1,0 +1,16 @@
+.logo_section {
+    width: 100%;
+    float: left;
+}
+
+.logo {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.logo a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+}

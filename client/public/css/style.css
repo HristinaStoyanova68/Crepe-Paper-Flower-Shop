@@ -278,22 +278,6 @@ button {
 /* header top section end */
 
 
-/* logo section start */
-
-.logo_section {
-    width: 100%;
-    float: left;
-}
-
-.logo {
-    width: 100%;
-    float: left;
-    text-align: center;
-}
-
-
-/* logo section end */
-
 
 /* header section start */
 
@@ -528,33 +512,7 @@ a:hover {
     color: #ffffff;
 }
 
-#my_slider a.carousel-control-next {
-    right: 0px;
-    top: 40px;
-}
 
-#my_slider a.carousel-control-prev {
-    left: 0px;
-    top: 40px;
-}
-
-#my_slider .carousel-control-next,
-#my_slider .carousel-control-prev {
-    width: 45px;
-    height: 45px;
-    background: rgb(242, 222, 172, 0.80);
-    opacity: 1;
-    font-size: 20px;
-    color: #000;
-    border-radius: 100px;
-}
-
-#my_slider .carousel-control-next:focus,
-#my_slider .carousel-control-next:hover,
-#my_slider .carousel-control-prev:focus,
-#my_slider .carousel-control-prev:hover {
-    color: #fff;
-}
 
 #main_slider a.carousel-control-next {
     right: 615px;
@@ -583,6 +541,35 @@ a:hover {
     color: #fff;
     background-color: #f26522;
 }
+
+#my_slider a.carousel-control-next {
+    right: 0px;
+    top: 40px;
+}
+
+#my_slider a.carousel-control-prev {
+    left: 0px;
+    top: 40px;
+}
+
+#my_slider .carousel-control-next,
+#my_slider .carousel-control-prev {
+    width: 45px;
+    height: 45px;
+    background: rgb(242, 222, 172, 0.80);
+    opacity: 1;
+    font-size: 20px;
+    color: #000;
+    border-radius: 100px;
+}
+
+#my_slider .carousel-control-next:focus,
+#my_slider .carousel-control-next:hover,
+#my_slider .carousel-control-prev:focus,
+#my_slider .carousel-control-prev:hover {
+    color: #fff;
+}
+
 
 /* banner section end */
 
@@ -710,3 +697,5 @@ a:hover {
         transform: rotate(360deg);
     }
 }
+
+

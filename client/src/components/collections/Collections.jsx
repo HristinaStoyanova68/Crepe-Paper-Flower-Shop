@@ -3,6 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 
 import * as itemsService from '../../services/itemsService';
 import styles from './Collections.module.css';
+import '../../App.module.css';
 
 export default function Collections() {
     const [collection, setCollection] = useState([]);
