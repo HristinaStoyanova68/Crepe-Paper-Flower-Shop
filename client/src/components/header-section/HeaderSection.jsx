@@ -1,7 +1,9 @@
 import CategoriesDropdown from './CategoriesDropdown';
 import LogoSection from './LogoSection';
-import SearchItem from './SearchItem';
+// import SearchItem from './SearchItem';
 import UserMenu from './UserMenu';
+
+import styles from './HeaderSection.module.css';
 
 export default function HeaderSection() {
 
@@ -16,9 +18,9 @@ export default function HeaderSection() {
     return (
         <>
             <LogoSection />
-            <div className="header_section">
+            <div className={styles["header_section"]}>
                 <div className="container">
-                    <div className="containt_main">
+                    <div className={styles["containt_main"]}>
 
                         <CategoriesDropdown />
 
