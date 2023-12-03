@@ -15,8 +15,7 @@ export default function Navbar() {
         <div className="container">
             <div className={styles["header_section_top"]}>
                 <div className={styles["home_logo"]}>
-                    {/* <img src="/images/logo_HSflowers.png" alt="logoImage" /> */}
-                    <p>Home</p>
+                    <Link to={Path.Home}><img src="images/logo_HSflowers.jpg" alt="logoImage" /></Link>
                 </div>
                 <div className="row">
                     <div className="col-sm-12">
