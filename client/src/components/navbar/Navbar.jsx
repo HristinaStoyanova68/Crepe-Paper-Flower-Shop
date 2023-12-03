@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="container">
             <div className={styles["header_section_top"]}>
                 <div className={styles["home_logo"]}>
-                    {/* <img src="" alt="logoImage" /> */}
+                    {/* <img src="/images/logo_HSflowers.png" alt="logoImage" /> */}
                     <p>Home</p>
                 </div>
                 <div className="row">

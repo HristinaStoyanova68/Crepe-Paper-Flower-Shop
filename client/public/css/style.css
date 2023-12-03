@@ -4,14 +4,14 @@
 @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
-@import url(css/font-awesome.min.css);
+/* @import url(css/font-awesome.min.css); */
 @import url(meanmenu.css);
 @import url(owl.carousel.min.css);
-@import url(swiper.min.css);
+/* @import url(swiper.min.css); */
 @import url(slick.css);
-@import url(jquery.fancybox.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
+/* @import url(jquery.fancybox.min.css); */
+/* @import url(jquery-ui.css); */
+/* @import url(nice-select.css); */
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -128,10 +128,6 @@ a {
     color: white;
     text-decoration: none;
     outline: none !important;
-}
-
-a,
-.btn {
     text-decoration: none !important;
     outline: none !important;
     -webkit-transition: all .3s ease-in-out;
@@ -200,43 +196,13 @@ button {
     width: 100%;
 }
 
-/* .layout_padding {
-    padding-top: 10px;
-    padding-bottom: 0px;
-} */
-
 .padding_0 {
     padding: 0px;
 }
 
-
-/* banner bg main start */
-
-
-
-
-/* banner bg main end */
-
-
-/* header top section start */
-
-
-
-
-
-
-/* header top section end */
-
-
-
-/* header section start */
-
-
-
-
 /* opennav bar start */
 
-.sidenav {
+/* .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -247,30 +213,30 @@ button {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-}
+} */
 
-.sidenav a {
+/* .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
-}
+} */
 
-.sidenav a:hover {
+/* .sidenav a:hover {
     color: #f26522;
-}
+} */
 
-.sidenav .closebtn {
+/* .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
+} */
 
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
@@ -278,33 +244,17 @@ button {
     .sidenav a {
         font-size: 18px;
     }
-}
+} */
 
-.toggle_icon {
+/* .toggle_icon {
     cursor: pointer;
     color: #ffffff;
     order: 2;
-}
+} */
 
 
 
 
-
-.btn-secondary {
-    color: #fff;
-    background-color: #30302e;
-    border-color: #30302e;
-}
-
-.btn-secondary:hover {
-    color: #fff;
-    background-color: #30302e;
-    border-color: #30302e;
-}
-
-.show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: none;
-}
 
 
 /* opennav bar end */
@@ -312,31 +262,12 @@ button {
 
 /* Styles for wrapping the search box start */
 
-.main {
-    flex: 1;
-    margin: 0px 30px;
-    display: inline-block;
-    order: 2;
-}
+
 
 
 /* Bootstrap 4 text input with search icon */
 
-.has-search .form-control {
-    padding-left: 2.375rem;
-}
 
-.has-search .form-control-feedback {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
-}
 
 
 /* Styles for wrapping the search box end */
@@ -364,7 +295,7 @@ button {
 a:hover {
     color: black;
     text-decoration: underline;
-}
+} 
 
 
 /* flage css end */

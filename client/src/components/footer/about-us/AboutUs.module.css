@@ -1,0 +1,26 @@
+/* .layout_padding {
+    padding-top: 10px;
+    padding-bottom: 80px;
+} */
+
+/* .post {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+} */
+
+p {
+    color: black;
+    font-size: 18px;
+}
+
+.post {
+    background-color: rgb(245, 212, 212, 0.8);
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }

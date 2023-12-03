@@ -1,6 +1,8 @@
+import styles from './SearchItem.module.css';
+
 export default function SearchItem() {
     return (
-        <div className="main">
+        <div className={styles.main}>
 
             <div className="input-group">
                 <input type="text" className="form-control" placeholder="Search item..." />
