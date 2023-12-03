@@ -1,0 +1,15 @@
+p {
+    color: black;
+    font-size: 18px;
+}
+
+.post {
+    background-color: rgb(245, 212, 212, 0.8);
+    max-width: 35%;
+    margin: 50px auto;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
