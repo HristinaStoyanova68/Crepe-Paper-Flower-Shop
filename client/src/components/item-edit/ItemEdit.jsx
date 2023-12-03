@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
+import generalStyles from '../../App.module.css';
 import styles from './ItemEdit.module.css';
 
 import * as itemService from '../../services/itemsService';
@@ -57,10 +58,10 @@ export default function ItemEdit() {
 
     return (
         // <!-- Create Page (Only for logged-in users) -->
-        <section className="edit">
-            <div className={styles.form}>
+        <section className={styles.edit}>
+            <div className={generalStyles.form}>
                 <h2>Edit Item</h2>
-                <form className={styles["edit-form"]} onSubmit={editItemSubmitHandler}>
+                <form onSubmit={editItemSubmitHandler}>
                     <input
                         type="text"
                         name="collectionName"
@@ -77,13 +78,6 @@ export default function ItemEdit() {
                     />
                     <input
                         type="text"
-                        name="price"
-                        placeholder="price"
-                        value={item[editFormKeys.Price]}
-                        onChange={onChange}
-                    />
-                    <input
-                        type="text"
                         name="imageUrl"
                         placeholder="Image URL"
                         value={item[editFormKeys.ImageUrl]}
@@ -92,8 +86,6 @@ export default function ItemEdit() {
                     <textarea
                         name="description"
                         placeholder="description"
-                        rows="10"
-                        cols="50"
                         value={item[editFormKeys.Description]}
                         onChange={onChange}
                     ></textarea>

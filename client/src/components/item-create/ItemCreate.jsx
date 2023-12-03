@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
+import generalStyles from '../../App.module.css';
 import styles from './ItemCreate.module.css';
 
 import * as itemService from '../../services/itemsService';
@@ -41,10 +42,10 @@ export default function ItemCreate() {
     return (
 
         // <!-- Create Page (Only for logged-in users) -->
-        <section className="create">
-            <div className={styles.form}>
-                <h2>Add Item</h2>
-                <form className={styles["create-form"]} onSubmit={onSubmit}>
+        <section className={styles.create}>
+            <div className={generalStyles.form}>
+                <h2>Create Item</h2>
+                <form onSubmit={onSubmit}>
                     <input
                         type="text"
                         name="collectionName"
@@ -61,13 +62,6 @@ export default function ItemCreate() {
                     />
                     <input
                         type="text"
-                        name="price"
-                        placeholder="price"
-                        value={values[createFormKeys.price]}
-                        onChange={onChange}
-                    />
-                    <input
-                        type="text"
                         name="imageUrl"
                         placeholder="Image URL"
                         value={values[createFormKeys.imageUrl]}
@@ -76,12 +70,12 @@ export default function ItemCreate() {
                     <textarea
                         name="description"
                         placeholder="description"
-                        rows="10"
-                        cols="50"
+                        // rows="10"
+                        // cols="50"
                         value={values[createFormKeys.description]}
                         onChange={onChange}
                     ></textarea>
-                    <button type="submit">Add Item</button>
+                    <button type="submit">Create</button>
                 </form>
             </div>
         </section>

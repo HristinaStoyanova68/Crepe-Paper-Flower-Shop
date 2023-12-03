@@ -17,7 +17,7 @@
 }
 
 .btn-secondary:hover {
-    color: #fff;
+    color: #f26522;
     background-color: #30302e;
     border-color: #30302e;
 }
@@ -25,3 +25,4 @@
 .show>.btn-secondary.dropdown-toggle:focus {
     box-shadow: none;
 }
+
