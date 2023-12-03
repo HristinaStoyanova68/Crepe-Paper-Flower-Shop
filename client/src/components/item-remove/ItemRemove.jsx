@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
+import generalStyles from '../../App.module.css';
 import styles from './ItemRemove.module.css';
 
 import * as itemService from '../../services/itemsService';
@@ -36,10 +37,10 @@ export default function ItemRemove() {
     }
 
     return (
-        <section className="edit">
-            <div className={styles.form}>
+        <section className={styles.remove}>
+            <div className={generalStyles.form}>
                 <h2>Delete Item</h2>
-                <form className={styles["edit-form"]} onSubmit={removeItemSubmitHandler}>
+                <form onSubmit={removeItemSubmitHandler}>
                     <input
                         type="text"
                         name="collectionName"
@@ -53,15 +54,6 @@ export default function ItemRemove() {
                         placeholder="name"
                         defaultValue={item.name}
                         disabled
-
-                    />
-                    <input
-                        type="text"
-                        name="price"
-                        placeholder="price"
-                        defaultValue={item.price}
-                        disabled
-
                     />
                     <input
                         type="text"
@@ -69,13 +61,10 @@ export default function ItemRemove() {
                         placeholder="Image URL"
                         defaultValue={item.imageUrl}
                         disabled
-
                     />
                     <textarea
                         name="description"
                         placeholder="description"
-                        rows="10"
-                        cols="50"
                         defaultValue={item.description}
                         disabled
                     ></textarea>
