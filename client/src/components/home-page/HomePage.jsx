@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './HomePage.module.css';
+import Path from '../../paths';
 // import styles from './Footer.module.css';
 
 export default function HomePage() {
@@ -13,15 +14,15 @@ export default function HomePage() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <h1 className={styles["banner_title"]}>bouquets<br />collection</h1>
-                                    <div className={styles["view_bt"]}><Link to="/bouquets">View</Link></div>
+                                    <div className={styles["view_bt"]}><Link to={Path.Collection_Bouquets}>View</Link></div>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className="row">
                                 <div className="col-sm-12">
-                                    <h1 className={styles["banner_title"]}>decoration<br />collection</h1>
-                                    <div className={styles["view_bt"]}><Link to="/decorations">View</Link></div>
+                                    <h1 className={styles["banner_title"]}>decorations<br />collection</h1>
+                                    <div className={styles["view_bt"]}><Link to={Path.Collection_Decorations}>View</Link></div>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +30,7 @@ export default function HomePage() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <h1 className={styles["banner_title"]}>gift boxes<br />collection</h1>
-                                    <div className={styles["view_bt"]}><Link to="/gift_boxes">View</Link></div>
+                                    <div className={styles["view_bt"]}><Link to={Path.Collection_Gift_Boxes}>View</Link></div>
                                 </div>
                             </div>
                         </div>

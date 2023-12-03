@@ -46,27 +46,27 @@ export default function ItemRemove() {
                         name="collectionName"
                         placeholder="collectionName"
                         defaultValue={item.collectionName}
-                        disabled
+                        readOnly
                     />
                     <input
                         type="text"
                         name="name"
                         placeholder="name"
                         defaultValue={item.name}
-                        disabled
+                        readOnly
                     />
                     <input
                         type="text"
                         name="imageUrl"
                         placeholder="Image URL"
                         defaultValue={item.imageUrl}
-                        disabled
+                        readOnly
                     />
                     <textarea
                         name="description"
                         placeholder="description"
                         defaultValue={item.description}
-                        disabled
+                        readOnly
                     ></textarea>
                     <button type="submit">Delete</button>
                 </form>

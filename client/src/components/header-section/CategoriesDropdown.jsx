@@ -11,7 +11,7 @@ export default function CategoriesDropdown() {
             </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <Link className="dropdown-item" to={Path.Collection_Bouquets}>Bouquets</Link>
-                <Link className="dropdown-item" to={Path.Collection_Decorations}>Decoration</Link>
+                <Link className="dropdown-item" to={Path.Collection_Decorations}>Decorations</Link>
                 <Link className="dropdown-item" to={Path.Collection_Gift_Boxes}>Gift Boxes</Link>
             </div>
         </div>
