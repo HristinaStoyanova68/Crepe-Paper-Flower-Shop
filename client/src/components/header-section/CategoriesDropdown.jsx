@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import Path from '../../paths';
 
+import styles from './CategoriesDropdown.module.css';
+
 export default function CategoriesDropdown() {
     return (
-        <div className="dropdown">
+        <div className={styles["dropdown"]}>
             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories
             </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">

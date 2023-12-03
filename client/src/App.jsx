@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/authContext';
 import Path from './paths';
 
+import styles from './App.module.css';
+
 import Navbar from './components/navbar/Navbar';
 import Footer from "./components/footer/Footer";
 import CopyRight from "./components/footer/CopyRight";
@@ -22,7 +24,7 @@ function App() {
 
     return (
         <AuthProvider>
-            <div className="banner_bg_main">
+            <div className={styles["banner_bg_main"]}>
                 <Navbar />
 
                 <HeaderSection />

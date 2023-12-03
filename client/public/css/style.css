@@ -101,7 +101,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -146,7 +146,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -200,10 +200,10 @@ button {
     width: 100%;
 }
 
-.layout_padding {
+/* .layout_padding {
     padding-top: 10px;
     padding-bottom: 0px;
-}
+} */
 
 .padding_0 {
     padding: 0px;
@@ -212,14 +212,7 @@ button {
 
 /* banner bg main start */
 
-.banner_bg_main {
-    width: 100%;
-    float: left;
-    background-image: url(../images/banner-bg.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
+
 
 
 /* banner bg main end */
@@ -281,6 +274,7 @@ button {
     .sidenav {
         padding-top: 15px;
     }
+
     .sidenav a {
         font-size: 18px;
     }
@@ -294,17 +288,7 @@ button {
 
 
 
-.dropdown,
-.dropleft,
-.dropright,
-.dropup {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    margin-left: 30px;
-    order: 2;
-}
+
 
 .btn-secondary {
     color: #fff;
@@ -391,45 +375,7 @@ a:hover {
 
 /* banner section start */
 
-.banner_section {
-    width: 100%;
-    float: left;
-    padding-bottom: 60px;
-}
 
-.banner_taital {
-    width: 100%;
-    font-size: 60px;
-    color: rgb(207, 227, 146);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    -webkit-text-stroke: 2.5px #000;
-}
-
-.buynow_bt {
-    width: 170px;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-
-.buynow_bt a {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #252525;
-    text-align: center;
-    padding: 10px 0px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.buynow_bt a:hover {
-    background-color: #f26522;
-    color: #ffffff;
-}
 
 
 
@@ -603,6 +549,7 @@ a:hover {
     0% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
     }
@@ -612,9 +559,8 @@ a:hover {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
-
-

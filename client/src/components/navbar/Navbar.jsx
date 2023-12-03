@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AuthContext from '../../contexts/authContext';
 
 import styles from './Navbar.module.css';
+import Path from '../../paths';
 
 export default function Navbar() {
     const {
@@ -21,7 +22,7 @@ export default function Navbar() {
                     <div className="col-sm-12">
                         <div className={styles["custom_menu"]}>
                             <ul>
-                                <li><Link to="#">New Releases</Link></li>
+                                <li><Link to={Path.NewReleases}>New Releases</Link></li>
                                 {isAuthenticated &&
                                     <>
                                         <li><Link to="/create">Create</Link></li>

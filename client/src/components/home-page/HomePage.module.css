@@ -1,0 +1,52 @@
+.banner_section {
+    width: 100%;
+    float: left;    
+}
+
+.layout_padding {
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+
+.banner_title {
+    width: 100%;
+    font-size: 60px;
+    color: rgb(207, 227, 146);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-text-stroke: 2.5px #000;
+}
+
+.view_bt {
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.view_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.view_bt a:hover {
+    background-color: #f26522;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
