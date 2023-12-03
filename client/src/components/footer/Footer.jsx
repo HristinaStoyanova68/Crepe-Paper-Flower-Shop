@@ -11,7 +11,6 @@ export default function Footer() {
             
             <div className={styles["footer_menu"]}>
                <ul>
-                  <li><Link to={Path.NewReleases}>New Releases</Link></li>
                   <li><Link to={Path.AboutUs}>About Us</Link></li>
                   <li><Link to={Path.ContactUs}>Contact Us</Link></li>
                </ul>

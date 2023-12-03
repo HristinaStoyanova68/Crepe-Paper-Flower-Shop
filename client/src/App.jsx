@@ -20,6 +20,7 @@ import ItemEdit from './components/item-edit/ItemEdit';
 import AuthGuard from './components/guards/AuthGuard';
 import ItemRemove from './components/item-remove/ItemRemove';
 import AboutUs from './components/footer/about-us/AboutUs';
+import ContactUs from './components/footer/contact-us/ContactUs';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
                     <Route path={Path.Register} element={<Register />} />
                     <Route path={Path.ItemDetails} element={<ItemDetails />} />
                     <Route path={Path.AboutUs} element={<AboutUs />} />
+                    <Route path={Path.ContactUs} element={<ContactUs />} />
 
                     <Route element={<AuthGuard />}>
                         <Route path={Path.ItemCreate} element={<ItemCreate />} />

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
+import generalStyles from '../../App.module.css';
 import styles from './Login.module.css';
 
 import useForm from '../../hooks/useForm';
@@ -19,10 +20,10 @@ export default function Login() {
   });
 
   return (
-    <section className="login">
-      <div className={styles.form}>
+    <section className={styles.login}>
+      <div className={generalStyles.form}>
         <h2>Login</h2>
-        <form className={styles["login-form"]} onSubmit={onSubmit}>
+        <form onSubmit={onSubmit}>
           <input
             type="text"
             name={loginFormKeys.Email}

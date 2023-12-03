@@ -1,6 +1,9 @@
-import { Link } from 'react-router-dom';
-import styles from './Register.module.css'
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+
+import generalStyles from '../../App.module.css';
+import styles from './Register.module.css'
+
 import AuthContext from '../../contexts/authContext';
 import useForm from '../../hooks/useForm';
 
@@ -19,10 +22,10 @@ export default function Register() {
   });
 
     return (
-        <section className="register">
-    <div className={styles.form}>
+        <section className={styles.register}>
+    <div className={generalStyles.form}>
       <h2>Register</h2>
-      <form className={styles["register-form"]} onSubmit={onSubmit}>
+      <form onSubmit={onSubmit}>
         <input
           type="text"
           name="email"
