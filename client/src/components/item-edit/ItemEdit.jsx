@@ -7,6 +7,7 @@ import styles from './ItemEdit.module.css';
 import * as itemService from '../../services/itemsService';
 import { pathToUrl } from '../../utils/pathUtils';
 import Path from '../../paths';
+import { IsOwnerGuardProvider } from '../../contexts/isOwnerContext';
 
 const editFormKeys = {
     CollectionName: 'collectionName',
@@ -35,7 +36,7 @@ export default function ItemEdit() {
             .catch(err => console.log(err));
     }, [itemId]);
 
-    const editItemSubmitHandler = async(e) => {
+    const editItemSubmitHandler = async (e) => {
         e.preventDefault();
 
         const values = Object.fromEntries(new FormData(e.currentTarget));
@@ -45,7 +46,7 @@ export default function ItemEdit() {
 
             navigate(pathToUrl(Path.ItemDetails, { collectionName, itemId }));
         } catch (err) {
-            console.log(err);           
+            console.log(err);
         }
     };
 
@@ -57,40 +58,41 @@ export default function ItemEdit() {
     }
 
     return (
-        // <!-- Create Page (Only for logged-in users) -->
-        <section className={styles.edit}>
-            <div className={generalStyles.form}>
-                <h2>Edit Item</h2>
-                <form onSubmit={editItemSubmitHandler}>
-                    <input
-                        name="collectionName"
-                        value={item[editFormKeys.CollectionName]}
-                        onChange={onChange}
-                        readOnly
+        <IsOwnerGuardProvider collectionName={collectionName} itemId={itemId}>
+            <section className={styles.edit}>
+                <div className={generalStyles.form}>
+                    <h2>Edit Item</h2>
+                    <form onSubmit={editItemSubmitHandler}>
+                        <input
+                            name="collectionName"
+                            value={item[editFormKeys.CollectionName]}
+                            onChange={onChange}
+                            readOnly
                         />
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="name"
-                        value={item[editFormKeys.Name]}
-                        onChange={onChange}
-                    />
-                    <input
-                        type="text"
-                        name="imageUrl"
-                        placeholder="Image URL"
-                        value={item[editFormKeys.ImageUrl]}
-                        onChange={onChange}
-                    />
-                    <textarea
-                        name="description"
-                        placeholder="description"
-                        value={item[editFormKeys.Description]}
-                        onChange={onChange}
-                    ></textarea>
-                    <button type="submit">Post</button>
-                </form>
-            </div>
-        </section>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="name"
+                            value={item[editFormKeys.Name]}
+                            onChange={onChange}
+                        />
+                        <input
+                            type="text"
+                            name="imageUrl"
+                            placeholder="Image URL"
+                            value={item[editFormKeys.ImageUrl]}
+                            onChange={onChange}
+                        />
+                        <textarea
+                            name="description"
+                            placeholder="description"
+                            value={item[editFormKeys.Description]}
+                            onChange={onChange}
+                        ></textarea>
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+            </section>
+        </IsOwnerGuardProvider>
     );
 }
