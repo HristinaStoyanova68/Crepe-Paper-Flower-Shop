@@ -4,16 +4,11 @@ import LogoSection from './LogoSection';
 import UserMenu from './UserMenu';
 
 import styles from './HeaderSection.module.css';
+import { useContext } from 'react';
+import AuthContext from '../../contexts/authContext';
 
 export default function HeaderSection() {
-
-    // const openNav = () => {
-    //     //TODO
-    // }
-
-    // const closeNav = () => {
-    //     //TODO
-    // }
+    const { isAuthenticated } = useContext(AuthContext);
 
     return (
         <>
@@ -26,7 +21,7 @@ export default function HeaderSection() {
 
                         {/* <SearchItem /> */}
 
-                        <UserMenu />
+                        {isAuthenticated && <UserMenu />}
 
                     </div>
                 </div>

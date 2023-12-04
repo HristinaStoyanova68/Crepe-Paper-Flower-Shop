@@ -1,16 +1,16 @@
 import * as request from '../lib/request';
 
-// const baseUrl = 'http://localhost:3030/data/items';
 const baseUrl = 'http://localhost:3030/data';
 
-// export const getAll = async () => {
-//     const response = await fetch(baseUrl);
-//     const result = await response.json();
+export const getAll = async () => {
+    const bouquetsItems = await request.get(`${baseUrl}/bouquets`);
+    const decorationsItems = await request.get(`${baseUrl}/decorations`);
+    const giftBoxesItems = await request.get(`${baseUrl}/gift_boxes`);
 
-//     const data = Object.values(result);
+    const result = [...bouquetsItems, ...decorationsItems, ...giftBoxesItems];
 
-//     return data;
-// }
+    return result;
+}
 
 export const getCollection = async (collectionName) => {
     // const response = await fetch(`${baseUrl}${collectionName}`);
@@ -26,6 +26,13 @@ export const getItem = async (collectionName, itemId) => {
 
     return result;
 };
+
+export const getOwnerItems = async (userId) => {
+
+    const result = (await getAll()).filter(x => x._ownerId === userId);
+
+    return result;
+}
 
 export const create = async (collectionName, itemData) => {
     

@@ -26,7 +26,7 @@ export default function Navbar() {
                                     <>
                                         <li><Link to="/create">Create</Link></li>
                                         <li><Link to="/logout">Logout</Link></li>
-                                        <span>/ {username}</span>
+                                        <span >/ {username}</span>
                                     </>
                                 }
 
