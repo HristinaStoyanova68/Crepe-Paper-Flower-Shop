@@ -125,3 +125,28 @@
     margin-top: 8rem;
     font-size: 30px;
   }
+
+  .error {
+    position: fixed;
+    right: 30px;
+    min-width: 130px;
+    max-width: 470px;
+    display: block;
+    z-index: 11111;
+    top: 110px;
+    text-align: center;
+    /* width: 320px; */
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .error p {
+    background-color: rgb(245, 212, 212, 0.8);
+    font-size: 18px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }

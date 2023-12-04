@@ -22,41 +22,69 @@ import ItemRemove from './components/item-remove/ItemRemove';
 import AboutUs from './components/footer/about-us/AboutUs';
 import ContactUs from './components/footer/contact-us/ContactUs';
 import MyProfilePage from './components/my-profile-page/MyProfilePage';
+import NotFound from './components/not-found-page/NotFound';
+import { useEffect, useState } from 'react';
+import ErrorBoundary from './ErrorBoundary';
 
 function App() {
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        if (error) {
+            setTimeout(() => {
+                setError(null);
+            }, 3000);
+        }
+    }, [error]);
+
+    const handleOnError = (error) => {
+        setError(error);
+    }
 
     return (
-        <AuthProvider>
-            <div className={styles["banner_bg_main"]}>
-                <Navbar />
+        <>
+            <ErrorBoundary onError={handleOnError}>
+                <AuthProvider>
+                    <div className={styles["banner_bg_main"]}>
+                        <Navbar />
 
-                <HeaderSection />
+                        <HeaderSection />
 
-                <Routes>
-                    <Route path={Path.Home} element={<HomePage />} />
-                    <Route path={Path.Collection_Bouquets} element={<Collections />} />
-                    <Route path={Path.Collection_Decorations} element={<Collections />} />
-                    <Route path={Path.Collection_Gift_Boxes} element={<Collections />} />
-                    <Route path={Path.Login} element={<Login />} />
-                    <Route path={Path.Register} element={<Register />} />
-                    <Route path={Path.ItemDetails} element={<ItemDetails />} />
-                    <Route path={Path.AboutUs} element={<AboutUs />} />
-                    <Route path={Path.ContactUs} element={<ContactUs />} />
+                        <Routes>
+                            <Route path={Path.Home} element={<HomePage />} />
+                            <Route path={Path.Collection_Bouquets} element={<Collections />} />
+                            <Route path={Path.Collection_Decorations} element={<Collections />} />
+                            <Route path={Path.Collection_Gift_Boxes} element={<Collections />} />
+                            <Route path={Path.Login} element={<Login />} />
+                            <Route path={Path.Register} element={<Register />} />
+                            <Route path={Path.ItemDetails} element={<ItemDetails />} />
+                            <Route path={Path.AboutUs} element={<AboutUs />} />
+                            <Route path={Path.ContactUs} element={<ContactUs />} />
 
-                    <Route element={<AuthGuard />}>
-                        <Route path={Path.ItemCreate} element={<ItemCreate />} />
-                        <Route path={Path.ItemEdit} element={<ItemEdit />} />
-                        <Route path={Path.ItemRemove} element={<ItemRemove />} />
-                        <Route path={Path.MyProfile} element={<MyProfilePage />} />
-                        <Route path={Path.Logout} element={<Logout />} />
-                    </Route>
-                </Routes>
-            </div>
+                            <Route element={<AuthGuard />}>
+                                <Route path={Path.ItemCreate} element={<ItemCreate />} />
+                                <Route path={Path.ItemEdit} element={<ItemEdit />} />
+                                <Route path={Path.ItemRemove} element={<ItemRemove />} />
+                                <Route path={Path.MyProfile} element={<MyProfilePage />} />
+                                <Route path={Path.Logout} element={<Logout />} />
+                            </Route>
+                            <Route path={Path.NotFoundPage} element={<NotFound />} />
+                        </Routes>
+                    </div>
 
-            <Footer />
+                    <Footer />
 
-            <CopyRight />
-        </AuthProvider>
+                    <CopyRight />
+                </AuthProvider>
+            </ErrorBoundary>
+            {error && (
+                <div>
+                    <div className={styles.error}>
+                        <p>{error.message}</p>
+                    </div>
+                </div>
+            )}
+        </>
     );
 }
 
