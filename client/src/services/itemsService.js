@@ -28,12 +28,8 @@ export const getItem = async (collectionName, itemId) => {
 };
 
 export const create = async (collectionName, itemData) => {
-    const data = {
-        ...itemData,
-        price: Number(itemData.price),
-        soldAmount: 0,
-    };
-    const result = await request.post(`${baseUrl}/${collectionName}`, data);
+    
+    const result = await request.post(`${baseUrl}/${collectionName}`, itemData);
 
     return result;
 };

@@ -21,6 +21,7 @@ import AuthGuard from './components/guards/AuthGuard';
 import ItemRemove from './components/item-remove/ItemRemove';
 import AboutUs from './components/footer/about-us/AboutUs';
 import ContactUs from './components/footer/contact-us/ContactUs';
+import MyProfilePage from './components/my-profile-page/MyProfilePage';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
                         <Route path={Path.ItemCreate} element={<ItemCreate />} />
                         <Route path={Path.ItemEdit} element={<ItemEdit />} />
                         <Route path={Path.ItemRemove} element={<ItemRemove />} />
+                        <Route path={Path.MyProfile} element={<MyProfilePage />} />
                         <Route path={Path.Logout} element={<Logout />} />
                     </Route>
                 </Routes>

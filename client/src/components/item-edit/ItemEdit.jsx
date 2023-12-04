@@ -63,12 +63,11 @@ export default function ItemEdit() {
                 <h2>Edit Item</h2>
                 <form onSubmit={editItemSubmitHandler}>
                     <input
-                        type="text"
                         name="collectionName"
-                        placeholder="collectionName"
                         value={item[editFormKeys.CollectionName]}
                         onChange={onChange}
-                    />
+                        readOnly
+                        />
                     <input
                         type="text"
                         name="name"

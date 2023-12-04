@@ -28,7 +28,7 @@ export default function Collections() {
     return (
         <div className={styles["collection_section"]}>
 
-            <h1 className={styles["collection_title"]}>{currCollectionName}</h1>
+            <h1 className={styles["collection_title"]}>{currCollectionName} Collection</h1>
 
             <div id="main_slider" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">

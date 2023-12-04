@@ -38,7 +38,8 @@
     color: #f26522;
   }
   
-  .form input{
+  .form input, 
+  .form select {
     border-radius: 10px;
     outline: 0;
     background: #ffffff;

@@ -1,10 +1,11 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('http'), require('fs'), require('crypto')) :
-    typeof define === 'function' && define.amd ? define(['http', 'fs', 'crypto'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Server = factory(global.http, global.fs, global.crypto));
-}(this, (function (http, fs, crypto) { 'use strict';
+        typeof define === 'function' && define.amd ? define(['http', 'fs', 'crypto'], factory) :
+            (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Server = factory(global.http, global.fs, global.crypto));
+}(this, (function (http, fs, crypto) {
+    'use strict';
 
-    function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+    function _interopDefaultLegacy(e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
     var http__default = /*#__PURE__*/_interopDefaultLegacy(http);
     var fs__default = /*#__PURE__*/_interopDefaultLegacy(fs);
@@ -13,14 +14,14 @@
     class ServiceError extends Error {
         constructor(message = 'Service Error') {
             super(message);
-            this.name = 'ServiceError'; 
+            this.name = 'ServiceError';
         }
     }
 
     class NotFoundError extends ServiceError {
         constructor(message = 'Resource not found') {
             super(message);
-            this.name = 'NotFoundError'; 
+            this.name = 'NotFoundError';
             this.status = 404;
         }
     }
@@ -28,7 +29,7 @@
     class RequestError extends ServiceError {
         constructor(message = 'Request error') {
             super(message);
-            this.name = 'RequestError'; 
+            this.name = 'RequestError';
             this.status = 400;
         }
     }
@@ -36,7 +37,7 @@
     class ConflictError extends ServiceError {
         constructor(message = 'Resource conflict') {
             super(message);
-            this.name = 'ConflictError'; 
+            this.name = 'ConflictError';
             this.status = 409;
         }
     }
@@ -44,7 +45,7 @@
     class AuthorizationError extends ServiceError {
         constructor(message = 'Unauthorized') {
             super(message);
-            this.name = 'AuthorizationError'; 
+            this.name = 'AuthorizationError';
             this.status = 401;
         }
     }
@@ -52,7 +53,7 @@
     class CredentialError extends ServiceError {
         constructor(message = 'Forbidden') {
             super(message);
-            this.name = 'CredentialError'; 
+            this.name = 'CredentialError';
             this.status = 403;
         }
     }
@@ -556,8 +557,8 @@
             if (query.pageSize) {
                 responseData = responseData.slice(0, pageSize);
             }
-    		
-    		if (query.distinct) {
+
+            if (query.distinct) {
                 const props = query.distinct.split(',').filter(p => p != '');
                 responseData = Object.values(responseData.reduce((distinct, c) => {
                     const key = props.map(p => c[p]).join('::');
@@ -793,7 +794,7 @@
     }
 
     function onRequest(context, tokens, query, body) {
-        Object.entries(body).forEach(([k,v]) => {
+        Object.entries(body).forEach(([k, v]) => {
             console.log(`${k} ${v ? 'enabled' : 'disabled'}`);
             context.util[k] = v;
         });
@@ -931,7 +932,7 @@
          * @param {Object} data Value to store. Shallow merge will be performed!
          * @return {Object} Updated entry.
          */
-         function merge(collection, id, data) {
+        function merge(collection, id, data) {
             if (!collections.has(collection)) {
                 throw new ReferenceError('Collection does not exist: ' + collection);
             }
@@ -1318,142 +1319,143 @@
 
     var identity = "email";
     var protectedData = {
-    	users: {
-    		"35c62d76-8152-4626-8712-eeb96381bea8": {
-    			email: "peter@abv.bg",
-    			username: "Peter",
-    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
-    		},
-    		"847ec027-f659-4086-8032-5173e2f9c93a": {
-    			email: "george@abv.bg",
-    			username: "George",
-    			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
-    		},
-    		"60f0cf0b-34b0-4abd-9769-8c42f830dffc": {
-    			email: "admin@abv.bg",
-    			username: "Admin",
-    			hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302"
-    		}
-    	},
-    	sessions: {
-    	}
+        users: {
+            "35c62d76-8152-4626-8712-eeb96381bea8": {
+                email: "peter@abv.bg",
+                username: "Peter",
+                hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
+            },
+            "847ec027-f659-4086-8032-5173e2f9c93a": {
+                email: "george@abv.bg",
+                username: "George",
+                hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
+            },
+            "60f0cf0b-34b0-4abd-9769-8c42f830dffc": {
+                email: "admin@abv.bg",
+                username: "Admin",
+                hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302"
+            }
+        },
+        sessions: {
+        }
     };
     var seedData = {
         bouquets: {
-            "item1": {
-                "collectionName": "Bouquets Collection",
-                "_id": "item1",
+            "862919e9-19ac-492d-a7ae-0213163b8d9e": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Bouquets",
                 "name": "Yellow rose",
+                "imageUrl": "https://shop.ogcrafts.com/wp-content/uploads/2021/03/yellow-crepe-paper-rose-flower.jpg",
                 "description": "A soft yellow rose for your loved ones",
-                "imageUrl": "images/collections/bouquets/yellow-crepe-paper-rose-flower.jpg",
-                "price": 5,
-                "soldAmount": 2
+                "_createdOn": 1701648951038,
+                "_id": "862919e9-19ac-492d-a7ae-0213163b8d9e"
             },
-            "item2": {
-                "collectionName": "Bouquets Collection",
-                "_id": "item2",
+            "bea8279b-d87b-4e65-a513-f7ad594c7c7f": {
+                "collectionName": "Bouquets",
                 "name": "Bouquet of peonies",
+                "imageUrl": "https://i.pinimg.com/originals/51/40/09/514009b3aa1567af7e29ccd64fa1f9fd.jpg",
                 "description": "Bouquet of peonies for your loved ones",
-                "imageUrl": "images/collections/bouquets/il_fullxfull.1795590365_gngb.jpg",
-                "price": 7,
-                "soldAmount": 4
+                "_createdOn": 1701649050007,
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "_updatedOn": 1701649351219,
+                "_id": "bea8279b-d87b-4e65-a513-f7ad594c7c7f"
             },
-            "item3": {
-                "collectionName": "Bouquets Collection",
-                "_id": "item3",
+            "d89310c1-183e-430d-8671-0106c6e060dd": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Bouquets",
                 "name": "Bouquet of spring flowers",
+                "imageUrl": "https://farm9.staticflickr.com/8595/16638917945_bc1809faeb.jpg",
                 "description": "Bouquet of spring flowers for your loved ones",
-                "imageUrl": "images/collections/bouquets/16638917945_bc1809faeb.jpg",
-                "price": 9,
-                "soldAmount": 6
+                "_createdOn": 1701649154177,
+                "_id": "d89310c1-183e-430d-8671-0106c6e060dd"
             }
         },
         decorations: {
-            "item4": {
-                "collectionName": "Decoration Collection",
-                "_id": "item4",
+            "e7a34d66-1890-461f-a7e3-48e95bff0f47": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Decorations",
                 "name": "Wedding chair decor",
+                "imageUrl": "https://d2s9i74h8duohm.cloudfront.net/wp-content/uploads/2019/12/Wedding_Chairs_Paper_Flowers_2-724x724.jpg",
                 "description": "Wedding chair decor",
-                "imageUrl": "images/collections/decorations/wedding-chairs.jpg",
-                "price": 5,
-                "soldAmount": 2
+                "_createdOn": 1701649633706,
+                "_id": "e7a34d66-1890-461f-a7e3-48e95bff0f47"
             },
-            "item5": {
-                "collectionName": "Decoration Collection",
-                "_id": "item5",
+            "cc16bf81-ddc6-4774-99f5-508ca992c0ad": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Decorations",
                 "name": "Wall decor",
+                "imageUrl": "https://m.media-amazon.com/images/I/61efySmSMfL._AC_UF350,350_QL80_.jpg",
                 "description": "Wall decor",
-                "imageUrl": "images/collections/decorations/wall-flowers.jpg",
-                "price": 7,
-                "soldAmount": 4
+                "_createdOn": 1701649782489,
+                "_id": "cc16bf81-ddc6-4774-99f5-508ca992c0ad"
             },
-            "item6": {
-                "collectionName": "Decoration Collection",
-                "_id": "item6",
+            "8878441d-b618-4972-8672-928dee2886ab": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Decorations",
                 "name": "Large decor",
+                "imageUrl": "https://i.pinimg.com/736x/fa/af/30/faaf30c3d9cbf480fce5b642d6728220.jpg",
                 "description": "Large decor",
-                "imageUrl": "images/collections/decorations/8-march.jpg",
-                "price": 9,
-                "soldAmount": 6
+                "_createdOn": 1701649870077,
+                "_id": "8878441d-b618-4972-8672-928dee2886ab"
             }
         },
         gift_boxes: {
-            "item7": {
-                "collectionName": "Gift Boxes Collection",
-                "_id": "item7",
+            "1934c02f-8a49-48b3-9d49-40fe96e9a8da": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Gift Boxes",
                 "name": "Boxes",
+                "imageUrl": "https://cdn11.bigcommerce.com/s-018f7/images/stencil/2048x2048/products/1073/1519/image000000_12__30669.1695326686.JPG?c=2",
                 "description": "Boxes",
-                "imageUrl": "images/collections/giftBoxes/boxes.jpg",
-                "price": 5,
-                "soldAmount": 2
+                "_createdOn": 1701650162891,
+                "_id": "1934c02f-8a49-48b3-9d49-40fe96e9a8da"
             },
-            "item8": {
-                "collectionName": "Gift Boxes Collection",
-                "_id": "item8",
+            "ea8b6b69-58c8-42e3-83ac-f0ffe236a437": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Gift Boxes",
                 "name": "Small boxes",
+                "imageUrl": "https://c8.alamy.com/comp/BGKFMA/small-gift-boxes-wrapped-in-tissue-paper-BGKFMA.jpg",
                 "description": "Small boxes",
-                "imageUrl": "images/collections/giftBoxes/small-boxes.jpg",
-                "price": 7,
-                "soldAmount": 4
+                "_createdOn": 1701650229410,
+                "_id": "ea8b6b69-58c8-42e3-83ac-f0ffe236a437"
             },
-            "item9": {
-                "collectionName": "Gift Boxes Collection",
-                "_id": "item9",
+            "7fc5e562-9cae-4b8a-b671-310649a42727": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Gift Boxes",
                 "name": "Paper-Orchid boxes",
+                "imageUrl": "https://d2s9i74h8duohm.cloudfront.net/wp-content/uploads/2013/06/PaperOrchidGiftTopperTN.jpg",
                 "description": "Paper-Orchid boxes",
-                "imageUrl": "images/collections/giftBoxes/Paper-Orchid-boxes.jpg",
-                "price": 9,
-                "soldAmount": 6
-            }
-        },
+                "_createdOn": 1701650277794,
+                "_id": "7fc5e562-9cae-4b8a-b671-310649a42727"
+            },
+        }
     };
     var rules$1 = {
-    	users: {
-    		".create": false,
-    		".read": [
-    			"Owner"
-    		],
-    		".update": false,
-    		".delete": false
-    	},
-    	members: {
-    		".update": "isOwner(user, get('teams', data.teamId))",
-    		".delete": "isOwner(user, get('teams', data.teamId)) || isOwner(user, data)",
-    		"*": {
-    			teamId: {
-    				".update": "newData.teamId = data.teamId"
-    			},
-    			status: {
-    				".create": "newData.status = 'pending'"
-    			}
-    		}
-    	}
+        users: {
+            ".create": false,
+            ".read": [
+                "Owner"
+            ],
+            ".update": false,
+            ".delete": false
+        },
+        members: {
+            ".update": "isOwner(user, get('teams', data.teamId))",
+            ".delete": "isOwner(user, get('teams', data.teamId)) || isOwner(user, data)",
+            "*": {
+                teamId: {
+                    ".update": "newData.teamId = data.teamId"
+                },
+                status: {
+                    ".create": "newData.status = 'pending'"
+                }
+            }
+        }
     };
     var settings = {
-    	identity: identity,
-    	protectedData: protectedData,
-    	seedData: seedData,
-    	rules: rules$1
+        identity: identity,
+        protectedData: protectedData,
+        seedData: seedData,
+        rules: rules$1
     };
 
     const plugins = [

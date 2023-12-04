@@ -252,31 +252,6 @@ button {
     order: 2;
 } */
 
-
-
-
-
-
-/* opennav bar end */
-
-
-/* Styles for wrapping the search box start */
-
-
-
-
-/* Bootstrap 4 text input with search icon */
-
-
-
-
-/* Styles for wrapping the search box end */
-
-
-
-
-
-
 /* flage css start */
 
 .lang_box {
@@ -296,19 +271,6 @@ a:hover {
     color: black;
     text-decoration: underline;
 } 
-
-
-/* flage css end */
-
-
-/* header section end */
-
-
-/* banner section start */
-
-
-
-
 
 #main_slider a.carousel-control-next {
     right: 615px;
@@ -373,7 +335,7 @@ a:hover {
 
 /* electronic section start */
 
-.electronic_img {
+/* .electronic_img {
     width: 100%;
     text-align: center;
     margin: 50px 0px;
@@ -407,7 +369,7 @@ a:hover {
 #electronic_main_slider .carousel-control-prev:hover {
     color: #fff;
     background-color: #f26522;
-}
+} */
 
 
 /* electronic section end */
@@ -415,7 +377,7 @@ a:hover {
 
 /* jewellery section start */
 
-.jewellery_section {
+/* .jewellery_section {
     width: 100%;
     float: left;
     padding-bottom: 50px;
@@ -497,4 +459,4 @@ a:hover {
     100% {
         transform: rotate(360deg);
     }
-}
+} 
