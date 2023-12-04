@@ -9,12 +9,8 @@
     text-align: center;
 }
 
-.logo a {
+.logo p {
     color: white;
     text-transform: uppercase;
     font-size: 35px;
-}
-
-.logo a:hover {
-    color: #f26522;
 }

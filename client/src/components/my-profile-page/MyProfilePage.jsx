@@ -19,14 +19,14 @@ export default function MyProfilePage() {
 
     return (
         <div className={styles["collection_section"]}>
-            <div id="main_slider" className="carousel slide" data-ride="carousel">
-                <div className="carousel-inner">
-                    {items.length > 0 &&
-                        items.map((item, index) => {
+            {items.length > 0 &&
+                <div id="main_slider" className="carousel slide" data-ride="carousel">
+                    <div className="carousel-inner">
+                        {items.map((item, index) => {
                             const collectionName = convertCollectionName(item.collectionName);
 
                             return (
-                                <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={item._id}>
+                                <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={item._id} style={{ minHeight: "50vh" }}>
                                     <div className="container">
                                         <div className={styles["collection_section_2"]}>
                                             <div className="row" style={{ justifyContent: 'center' }}>
@@ -44,19 +44,19 @@ export default function MyProfilePage() {
                                 </div>
                             );
                         })
-                    }
-
-                    {!items.length &&
-                        <p>Your list is empty. Add new item please!</p>
-                    }
+                        }
+                    </div>
+                    <a className="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                        <i className="fa fa-angle-left"></i>
+                    </a>
+                    <a className="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                        <i className="fa fa-angle-right"></i>
+                    </a>
                 </div>
-                <a className="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                    <i className="fa fa-angle-left"></i>
-                </a>
-                <a className="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                    <i className="fa fa-angle-right"></i>
-                </a>
-            </div>
+            }
+            {!items.length &&
+                <p>Your list is empty. Add new item please!</p>
+            }
         </div>
     );
 };

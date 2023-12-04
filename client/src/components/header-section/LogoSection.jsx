@@ -8,7 +8,7 @@ export default function LogoSection() {
             <div className="container">
                <div className="row">
                   <div className="col-sm-12">
-                     <div className={styles.logo}><Link to="index.html">hristina&apos;s craft world</Link></div>
+                     <div className={styles.logo}><p>hristina&apos;s craft world</p></div>
                   </div>
                </div>
             </div>
