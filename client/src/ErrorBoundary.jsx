@@ -32,7 +32,7 @@ export default class ErrorBoundary extends Component {
         window.addEventListener('unhandledrejection', this.handlePromiseError);
     };
 
-    conponentWillUnmount() {
+    componentWillUnmount() {
         window.removeEventListener('unhandledrejection', this.handlePromiseError);
     }
 

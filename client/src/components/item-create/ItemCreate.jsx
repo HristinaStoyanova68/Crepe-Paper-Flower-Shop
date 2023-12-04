@@ -11,7 +11,6 @@ import convertCollectionName from '../../utils/convertCollectionName';
 const createFormKeys = {
     collectionName: 'collectionName',
     name: 'name',
-    price: 'price',
     imageUrl: 'imageUrl',
     description: 'description',
 }
@@ -25,6 +24,7 @@ export default function ItemCreate() {
 
         try {
             await itemService.create(collectionName, values);
+
             navigate(Path.Home);
         } catch (err) {
             console.log(err);

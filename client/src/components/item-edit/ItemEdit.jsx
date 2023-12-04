@@ -12,7 +12,6 @@ import { IsOwnerGuardProvider } from '../../contexts/isOwnerContext';
 const editFormKeys = {
     CollectionName: 'collectionName',
     Name: 'name',
-    Price: 'price',
     ImageUrl: 'imageUrl',
     Description: 'description',
 }
@@ -23,7 +22,6 @@ export default function ItemEdit() {
     const [item, setItem] = useState({
         [editFormKeys.CollectionName]: '',
         [editFormKeys.Name]: '',
-        [editFormKeys.Price]: '',
         [editFormKeys.ImageUrl]: '',
         [editFormKeys.Description]: '',
     })
