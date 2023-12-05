@@ -1,8 +1,8 @@
 .details-wrapper {
-    background-color: rgba(158, 80, 237, 0.5);
+    background-color: rgb(245, 212, 212, 0.8);
     margin: 50px auto;
     height: 75%;
-    width: 80%;
+    width: 40%;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
 }
@@ -55,7 +55,8 @@ span {
 
 }
 
-.action-buttons a {
+.action-buttons a,
+.action-buttons button {
     text-decoration: none;
     margin: auto 50px;
     margin-bottom: 10px;
@@ -68,7 +69,8 @@ span {
     border-radius: 5px;
 }
 
-.action-buttons a:hover {
+.action-buttons a:hover,
+.action-buttons button:hover {
     background: #bd2c2c;
 }
 

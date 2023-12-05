@@ -11,7 +11,7 @@ const AuthContext = createContext();
 AuthContext.displayName = 'AuthContext';
 // console.log(AuthContext);
 
- export const AuthProvider = ({
+export const AuthProvider = ({
     children,
 }) => {
 
@@ -25,8 +25,7 @@ AuthContext.displayName = 'AuthContext';
 
         localStorage.setItem('accessToken', result.accessToken);
 
-        // navigate(Path.Home);
-        navigate(-1);
+        navigate(Path.Home);
     };
 
     const registerSubmitHandler = async (values) => {
@@ -45,7 +44,6 @@ AuthContext.displayName = 'AuthContext';
     const logoutHandler = () => {
         setAuth({});
         localStorage.removeItem('accessToken');
-        navigate(Path.Home);
     }
 
     const values = {
@@ -62,9 +60,8 @@ AuthContext.displayName = 'AuthContext';
         <AuthContext.Provider value={values}>
             {children}
         </AuthContext.Provider>
-        
+
     );
 }
-
 
 export default AuthContext;

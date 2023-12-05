@@ -44,7 +44,7 @@ export default function Login() {
               value={values[loginFormKeys.Password]}
             />
             <button type="submit">login</button>
-            <p className={styles.message}>
+            <p className={generalStyles.message}>
               Not registered? <Link to="/register">Create an account</Link>
             </p>
           </form>

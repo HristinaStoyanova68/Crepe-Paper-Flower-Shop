@@ -53,7 +53,7 @@ export default function Register() {
               value={values[registerFormKeys.RePassword]}
             />
             <button type="submit">register</button>
-            <p className={styles.message}>Already registered? <Link to="/login">Login</Link></p>
+            <p className={generalStyles.message}>Already registered? <Link to="/login">Login</Link></p>
           </form>
         </div>
       </section>
