@@ -14,7 +14,8 @@ const Path = {
     ItemRemove: '/:collectionName/:itemId/remove',
     NewReleases: '/new-releases',
     MyProfile: '/my-profile',
-    // NotFoundPage: '/404',
+    NotFoundPage: '/404',
+    ForbiddenPaths: '/*',
 };
 
 export default Path;

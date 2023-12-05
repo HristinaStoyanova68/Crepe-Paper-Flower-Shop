@@ -72,6 +72,7 @@ function App() {
                             </Route>
 
                             <Route path={Path.NotFoundPage} element={<NotFoundPage />}/>
+                            <Route path={Path.ForbiddenPaths} element={<NotFoundPage />} />
                         </Routes>
                     </div>
 

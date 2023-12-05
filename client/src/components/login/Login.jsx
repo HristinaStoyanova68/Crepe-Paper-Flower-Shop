@@ -8,7 +8,7 @@ import useForm from '../../hooks/useForm';
 import AuthContext from '../../contexts/authContext';
 import Path from '../../paths';
 
-const loginFormKeys = {
+const LoginFormKeys = {
   Email: 'email',
   Password: 'password',
 }
@@ -16,32 +16,31 @@ const loginFormKeys = {
 export default function Login() {
   const { loginSubmitHandler, isAuthenticated } = useContext(AuthContext);
   const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
-    [loginFormKeys.Email]: '',
-    [loginFormKeys.Password]: '',
+    [LoginFormKeys.Email]: '',
+    [LoginFormKeys.Password]: '',
   });
 
   return (
     <>
       {isAuthenticated && <Navigate to={Path.NotFoundPage} />}
+      
       <section className={styles.login}>
         <div className={generalStyles.form}>
           <h2>Login</h2>
           <form onSubmit={onSubmit}>
             <input
               type="text"
-              name={loginFormKeys.Email}
-              id="email"
+              name={LoginFormKeys.Email}
               placeholder="email"
               onChange={onChange}
-              value={values[loginFormKeys.Email]}
+              value={values[LoginFormKeys.Email]}
             />
             <input
               type="password"
-              name={loginFormKeys.Password}
-              id="password"
+              name={LoginFormKeys.Password}
               placeholder="password"
               onChange={onChange}
-              value={values[loginFormKeys.Password]}
+              value={values[LoginFormKeys.Password]}
             />
             <button type="submit">login</button>
             <p className={generalStyles.message}>

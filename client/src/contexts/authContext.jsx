@@ -9,7 +9,6 @@ import Path from '../paths';
 const AuthContext = createContext();
 
 AuthContext.displayName = 'AuthContext';
-// console.log(AuthContext);
 
 export const AuthProvider = ({
     children,
@@ -19,26 +18,45 @@ export const AuthProvider = ({
     const [auth, setAuth] = usePersistedState('auth', {});
 
     const loginSubmitHandler = async (values) => {
-        const result = await authService.login(values.email, values.password);
 
-        setAuth(result);
-
-        localStorage.setItem('accessToken', result.accessToken);
-
-        navigate(Path.Home);
+        try {
+            if (values.email === '' || values.password === '') {
+                throw new Error('All fields are required!');
+            }
+            const result = await authService.login(values.email, values.password);
+    
+            setAuth(result);
+    
+            localStorage.setItem('accessToken', result.accessToken);
+    
+            navigate(Path.Home);
+        } catch (error) {
+            throw error;
+        }
     };
 
     const registerSubmitHandler = async (values) => {
-        // console.log(values);
-        const result = await authService.register(values.email, values.password);
 
-        //TODO validations for repeating password
+        try {
+            if (values.username === '' || values.email === '' || values.password === '') {
+                throw new Error('All fields are required!');
+            }
 
-        setAuth(result);
-
-        localStorage.setItem('accessToken', result.accessToken);
-
-        navigate(Path.Home);
+            if (values.password !== values['re-password']) {
+    
+                throw new Error('Passwords do not match');
+            }
+    
+            const result = await authService.register(values.username, values.email, values.password);
+    
+            setAuth(result);
+    
+            localStorage.setItem('accessToken', result.accessToken);
+    
+            navigate(Path.Home);
+        } catch (error) {
+            throw error;
+        }
     };
 
     const logoutHandler = () => {
@@ -60,7 +78,6 @@ export const AuthProvider = ({
         <AuthContext.Provider value={values}>
             {children}
         </AuthContext.Provider>
-
     );
 }
 

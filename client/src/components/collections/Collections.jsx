@@ -10,14 +10,13 @@ export default function Collections() {
     const [currCollectionName, setCollectionName] = useState('');
 
     const locationName = useLocation().pathname;
-    // console.log(locationName);
 
     useEffect(() => {
         itemsService.getCollection(locationName)
             .then(data => {
                 setCollection(Object.values(data))
             })
-            .catch(err => console.log(err))
+            .catch(err => console.log(err));
     }, [locationName]);
 
 

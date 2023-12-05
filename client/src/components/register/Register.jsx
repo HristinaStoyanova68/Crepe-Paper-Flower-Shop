@@ -9,6 +9,7 @@ import useForm from '../../hooks/useForm';
 import Path from '../../paths';
 
 const registerFormKeys = {
+  Username: 'username',
   Email: 'email',
   Password: 'password',
   RePassword: 're-password',
@@ -17,6 +18,7 @@ const registerFormKeys = {
 export default function Register() {
   const { registerSubmitHandler, isAuthenticated } = useContext(AuthContext);
   const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
+    [registerFormKeys.Username]: '',
     [registerFormKeys.Email]: '',
     [registerFormKeys.Password]: '',
     [registerFormKeys.RePassword]: '',
@@ -28,10 +30,16 @@ export default function Register() {
         <div className={generalStyles.form}>
           <h2>Register</h2>
           <form onSubmit={onSubmit}>
+          <input
+              type="text"
+              name="username"
+              placeholder="username"
+              onChange={onChange}
+              value={values[registerFormKeys.Username]}
+            />
             <input
               type="text"
               name="email"
-              id="register-email"
               placeholder="email"
               onChange={onChange}
               value={values[registerFormKeys.Email]}
@@ -39,7 +47,6 @@ export default function Register() {
             <input
               type="password"
               name="password"
-              id="register-password"
               placeholder="password"
               onChange={onChange}
               value={values[registerFormKeys.Password]}
@@ -47,7 +54,6 @@ export default function Register() {
             <input
               type="password"
               name="re-password"
-              id="repeat-password"
               placeholder="repeat password"
               onChange={onChange}
               value={values[registerFormKeys.RePassword]}

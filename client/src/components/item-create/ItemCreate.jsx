@@ -23,6 +23,11 @@ export default function ItemCreate() {
         const collectionName = convertCollectionName(values.collectionName);
 
         try {
+
+            if (values.name === '' || values.imageUrl === '' || values.description === '') {
+                throw new Error('All fields are required!');
+            }
+
             await itemService.create(collectionName, values);
 
             navigate(Path.Home);
@@ -79,3 +84,4 @@ export default function ItemCreate() {
         </section>
     );
 }
+
