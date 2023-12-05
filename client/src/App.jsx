@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import { AuthProvider } from './contexts/authContext';
@@ -22,9 +23,9 @@ import ItemRemove from './components/item-remove/ItemRemove';
 import AboutUs from './components/footer/about-us/AboutUs';
 import ContactUs from './components/footer/contact-us/ContactUs';
 import MyProfilePage from './components/my-profile-page/MyProfilePage';
-import NotFound from './components/not-found-page/NotFound';
-import { useEffect, useState } from 'react';
 import ErrorBoundary from './ErrorBoundary';
+import NotFoundPage from './components/not-found-page/NotFoundPage';
+import NewReleases from './components/navbar/new-releases/NewReleases';
 
 function App() {
     const [error, setError] = useState(null);
@@ -60,6 +61,7 @@ function App() {
                             <Route path={Path.ItemDetails} element={<ItemDetails />} />
                             <Route path={Path.AboutUs} element={<AboutUs />} />
                             <Route path={Path.ContactUs} element={<ContactUs />} />
+                            <Route path={Path.NewReleases} element={<NewReleases />} />
 
                             <Route element={<AuthGuard />}>
                                 <Route path={Path.ItemCreate} element={<ItemCreate />} />
@@ -68,7 +70,8 @@ function App() {
                                 <Route path={Path.MyProfile} element={<MyProfilePage />} />
                                 <Route path={Path.Logout} element={<Logout />} />
                             </Route>
-                            <Route path={Path.NotFoundPage} element={<NotFound />} />
+
+                            <Route path={Path.NotFoundPage} element={<NotFoundPage />}/>
                         </Routes>
                     </div>
 
