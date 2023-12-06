@@ -60,7 +60,6 @@ export default function inputValuesValidation(values) {
         if (isValidPassword(password) === false) {
             throw new Error('Invalid password');
         }
-       
     }
 
     if (values.hasOwnProperty('re-password')) {
@@ -71,14 +70,17 @@ export default function inputValuesValidation(values) {
         }
 
         if (values.password !== rePassword) {
-    
-                throw new Error('Passwords do not match');
-            }
 
+            throw new Error('Passwords do not match');
+        }
     }
 
     if (values.hasOwnProperty('name')) {
-        const username = values.name;
+        const name = values.name;
+
+        if (name === '') {
+            throw new Error('Name is required!');
+        }
     }
 
     if (values.hasOwnProperty('imageUrl')) {
