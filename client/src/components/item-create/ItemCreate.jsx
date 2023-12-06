@@ -7,6 +7,7 @@ import * as itemService from '../../services/itemsService';
 import useForm from '../../hooks/useForm';
 import Path from '../../paths';
 import convertCollectionName from '../../utils/convertCollectionName';
+import inputValuesValidation from '../../utils/inputValuesValidation';
 
 const createFormKeys = {
     collectionName: 'collectionName',
@@ -23,16 +24,17 @@ export default function ItemCreate() {
         const collectionName = convertCollectionName(values.collectionName);
 
         try {
+            // if (values.name === '' || values.imageUrl === '' || values.description === '') {
+            //     throw new Error('All fields are required!');
+            // }
 
-            if (values.name === '' || values.imageUrl === '' || values.description === '') {
-                throw new Error('All fields are required!');
-            }
+            inputValuesValidation(values);
 
             await itemService.create(collectionName, values);
 
             navigate(Path.Home);
         } catch (err) {
-            console.log(err);
+            throw err;
         }
     }
 

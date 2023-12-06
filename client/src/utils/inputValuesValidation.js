@@ -65,10 +65,6 @@ export default function inputValuesValidation(values) {
     if (values.hasOwnProperty('re-password')) {
         const rePassword = values['re-password'];
 
-        if (rePassword === '') {
-            throw new Error('Re-password is required!');
-        }
-
         if (values.password !== rePassword) {
 
             throw new Error('Passwords do not match');
@@ -76,7 +72,9 @@ export default function inputValuesValidation(values) {
     }
 
     if (values.hasOwnProperty('name')) {
+
         const name = values.name;
+        console.log(name);
 
         if (name === '') {
             throw new Error('Name is required!');
@@ -84,11 +82,30 @@ export default function inputValuesValidation(values) {
     }
 
     if (values.hasOwnProperty('imageUrl')) {
-        const username = values.imageUrl;
+        const imageUrl = values.imageUrl;
+
+        if (imageUrl === '') {
+            throw new Error('Image is required!');
+        }
+
+        const imageUrlRegex = /^(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/;
+
+        const isValidImageUrl = (imageUrl) => {
+            return imageUrlRegex.test(imageUrl);
+        };
+
+        if (isValidImageUrl(imageUrl) === false) {
+            throw new Error('ImageUrl must start with "http://" or "https://"!');
+        }
+
     }
 
     if (values.hasOwnProperty('description')) {
-        const username = values.description;
+        const description = values.description;
+
+        if (description === '') {
+            throw new Error('Description is required!');
+        }
     }
 
     return null;
