@@ -45,11 +45,36 @@ export default function inputValuesValidation(values) {
     }
 
     if (values.hasOwnProperty('password')) {
-        const username = values.password;
+        const password = values.password;
+
+        if (password === '') {
+            throw new Error('Password is required!');
+        }
+
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()_+|~=`{}\[\]:";'<>?,.\/]{8,}$/;
+
+        const isValidPassword = (password) => {
+            return passwordRegex.test(password);
+        };
+
+        if (isValidPassword(password) === false) {
+            throw new Error('Invalid password');
+        }
+       
     }
 
     if (values.hasOwnProperty('re-password')) {
-        const username = values['re-password'];
+        const rePassword = values['re-password'];
+
+        if (rePassword === '') {
+            throw new Error('Re-password is required!');
+        }
+
+        if (values.password !== rePassword) {
+    
+                throw new Error('Passwords do not match');
+            }
+
     }
 
     if (values.hasOwnProperty('name')) {

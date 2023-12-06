@@ -43,11 +43,6 @@ export const AuthProvider = ({
             //     throw new Error('All fields are required!');
             // }
 
-            // if (values.password !== values['re-password']) {
-    
-            //     throw new Error('Passwords do not match');
-            // }
-
             inputValuesValidation(values);
     
             const result = await authService.register(values.username, values.email, values.password);
