@@ -5,6 +5,7 @@ import usePersistedState from '../hooks/usePersistedState';
 import * as authService from '../services/authService';
 
 import Path from '../paths';
+import inputValuesValidation from '../utils/inputValuesValidation';
 
 const AuthContext = createContext();
 
@@ -38,14 +39,16 @@ export const AuthProvider = ({
     const registerSubmitHandler = async (values) => {
 
         try {
-            if (values.username === '' || values.email === '' || values.password === '') {
-                throw new Error('All fields are required!');
-            }
+            // if (values.username === '' || values.email === '' || values.password === '') {
+            //     throw new Error('All fields are required!');
+            // }
 
-            if (values.password !== values['re-password']) {
+            // if (values.password !== values['re-password']) {
     
-                throw new Error('Passwords do not match');
-            }
+            //     throw new Error('Passwords do not match');
+            // }
+
+            inputValuesValidation(values);
     
             const result = await authService.register(values.username, values.email, values.password);
     

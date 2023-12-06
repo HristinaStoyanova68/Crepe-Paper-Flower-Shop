@@ -13,9 +13,7 @@ export default function NewReleases() {
     useEffect(() => {
         itemService.getAll()
         .then(result => {
-            console.log(result);
             const sortedNewReleases = result.sort((a, b) => a._createdOn - b._createdOn).slice(-3).reverse();
-            console.log(sortedNewReleases);
             setNewReleases(state => state = [...sortedNewReleases]);
         })
         .catch(err => console.log(err));
