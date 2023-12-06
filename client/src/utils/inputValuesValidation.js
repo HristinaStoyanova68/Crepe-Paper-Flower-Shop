@@ -27,7 +27,21 @@ export default function inputValuesValidation(values) {
     }
 
     if (values.hasOwnProperty('email')) {
-        const username = values.email;
+        const email = values.email;
+
+        if (email === '') {
+            throw new Error('Email is required!');
+        }
+
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+        const isValidEmail = (email) => {
+            return emailRegex.test(email);
+        };
+
+        if (isValidEmail(email) === false) {
+            throw new Error('Invalid email');
+        }
     }
 
     if (values.hasOwnProperty('password')) {
