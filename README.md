@@ -5,7 +5,7 @@ SoftUni Course Project
 
 ## Project Description
 
-HRISTINA'S CRAFT WORLD is an online platform that provides browsing opportunities for handcrafted products made from crepe paper. The platform offers the following functionalities:
+[HRISTINA'S CRAFT WORLD ReactJS](https://hristina-s-craft-world-reactjs.firebaseapp.com/) is an online platform that provides browsing opportunities for handcrafted products made from crepe paper. The platform offers the following functionalities:
 
 - Users can explore a gallery consisting of three collections: bouquets, decorations for home or parties, and gift boxes adorned with crepe paper flowers.
 - Initially, the platform showcases three products from each collection, accessible for viewing by all users.
