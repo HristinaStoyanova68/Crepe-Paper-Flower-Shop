@@ -32,6 +32,9 @@ To install the project locally and start it, follow these steps:
 
 ## Technologies and Tools
 
+![React](https://img.shields.io/badge/React-Library-blue)
+![Vite](https://img.shields.io/badge/Vite-Tool-yellow)
+
 The project is developed using the following technologies and tools:
 - React for frontend development
 - Node.js for the server-side
