@@ -136,6 +136,8 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 }
 ```
 
+#### Login:
+
 ##### POST /login
 
 **Description: Authenticate and log in a user.**
@@ -156,47 +158,23 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 ### Collections
 
+#### Bouquets
+
+#### Decorations
+
+#### Gift Boxes
+
 #### BaseUrl
 
 `http://localhost:3030/data`
 
 ##### GET /bouquets
 
-**Description: Get Collection Bouquets.**
-
-**Request:**
-```json
-{
-    "collectionName": "string",
-}
-```
-**Response:**
-```json
-{
-    "collectionName ": "collectionName"
-}
-```
-
 ##### GET /decorations
-
-**Description: Get Collection Decorations.**
-
-**Request:**
-```json
-{
-    "collectionName": "string",
-}
-```
-**Response:**
-```json
-{
-    "collectionName ": "collectionName"
-}
-```
 
 ##### GET /gift_boxes
 
-**Description: Get Collection Gift Boxes.**
+**Description: Get Collections**
 
 **Request:**
 ```json
