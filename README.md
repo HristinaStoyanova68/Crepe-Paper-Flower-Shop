@@ -15,7 +15,6 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 8. [License](#license)
 9. [Credits](#credits)
 
-
 ## Project Overview
 
 **HRISTINA’S CRAFT WORLD ReactJS** aims to bring together people for whom the beauty of small things makes тхеир day beautiful and smiling. It is a place where anyone can view or showcase incredible flowers, bouquets, or decorations made solely from crepe paper.
