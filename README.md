@@ -20,6 +20,35 @@ SoftUni Course Project
 - The bottom section of the page (footer) contains a link to the Home Page on the left side.
 - The right side of the footer includes the "About Us" section, which upon clicking shows a brief description of HRISTINA'S CRAFT WORLD, followed by the "contact us" button leading to contact information.
 
+
+## Features
+
+*Carousel Features:
+
+    1.Collection Carousel:
+    Our application features three distinct carousels showcasing the names of the following collections: bouquets, decorations, and gift boxes.
+
+    2.Items Carousel:
+    These carousel offer a visual representation of each collection, allowing users to preview three elements from each category swiftly.
+
+    3.Recent Additions Display:
+    Additionally, we provide a carousel displaying the most recent items added to our platform. This carousel showcases the latest additions from all collections, providing users with a quick glance at the most recent items available.
+
+Dropdown Navigation for Collections:
+
+Our application includes a dropdown menu containing the names of the various collections. This feature enables users to easily and swiftly navigate to their preferred collection, allowing them to explore the items within it effortlessly.
+
+User Authentication: 
+Secure user authentication ensures a personalized experience for each member with their created items.
+
+## How it Works
+
+1.Account Creation: Users register to create personalized accounts, allowing them to create, modify, or delete items.
+2.Creating an Item in a Collection: Once registered, users choose a collection in which they can add their own item.
+3.Real-time Updates: All changes made to the collections, including additions and modifications, are updated in real-time, ensuring that information about each item is current.
+4.Liking an Item: Any logged-in user who is not the owner of an item can like it, and the count of likes is displayed on the item's screen.
+5.Guest Visitors: Unauthenticated visitors can browse all collections and their contents but cannot add, modify, delete, or like items within the collections.
+
 ## Installation and Usage Instructions
 
 To install the project locally and start it, follow these steps:
@@ -28,7 +57,7 @@ To install the project locally and start it, follow these steps:
 2. Navigate to the project directory.
 3. Run the command `npm install` to install the necessary dependencies.
 4. Start the application with the command `npm run dev`.
-5. Open a browser and go to the address `http://localhost:3000` to see HRISTINA'S CRAFT WORLD in action.
+5. Open a browser and go to the address `http://localhost:3000` to see HRISTINA'S CRAFT WORLD ReactJS in action.
 
 ## Technologies and Tools
 
