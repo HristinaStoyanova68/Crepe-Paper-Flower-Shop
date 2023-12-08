@@ -260,8 +260,6 @@ Example structure:
 
 ##### GET /:collectionName/:itemId/remove
 
-<span style="font-style: italic;">Description: </span>Get item and remove it.
-
 **Description: Get item and remove it.**
 **Request:**
 ```json
