@@ -97,7 +97,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 #### BaseUrl
 
-`http://localhost:3030/users`
+<code>http://localhost:3030/users</code>
 
 #### Register:
 
@@ -274,6 +274,21 @@ Example structure:
     "itemData ": "itemData"
 }
 ```
+
+## Project Structure
+
+The project follows a structured organization to enhance maintainability and ease of navigation. Here's a brief overview of the main directories and their purposes:
+
+- **/client:**
+ Contains the frontend application built with React.
+
+- **/public:**
+ Static assets and HTML template.
+
+- **/src:**
+ React components, styles, and application logic.
+
+
 
 
 
