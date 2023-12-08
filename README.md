@@ -97,9 +97,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 #### BaseUrl
 
-```http
-http://localhost:3030/users
-```
+`http://localhost:3030/users`
 
 #### Register:
 
