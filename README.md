@@ -18,8 +18,8 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 ## Project Overview
 
 **HRISTINA’S CRAFT WORLD ReactJS** aims to bring together people for whom the beauty of small things makes тхеир day beautiful and smiling. It is a place where anyone can view or showcase incredible flowers, bouquets, or decorations made solely from crepe paper.
-## Badges
 
+## Tech Stack
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML-Language-blue)
@@ -34,14 +34,9 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 
-## Tech Stack
-
-**Client:** 
-JS, HTML, CSS, React, React-router-dom, Vite
-
 ## Features
 
-### Carousel Features:
+- ### Carousel Features:
 
 **1.Collections Carousel:**
 Our application features three distinct carousels showcasing the names of the following collections: 
@@ -55,11 +50,11 @@ These carousel offer a visual representation of each collection, allowing users 
 **3.New Releases Carousel:**
 Additionally, we provide a carousel displaying the most recent items added to our platform. This carousel showcases the latest additions from all collections, providing users with a quick glance at the most recent items available.
 
-### Dropdown Navigation for Collections:
+- ### Dropdown Navigation for Collections:
 
 Our application includes a dropdown menu containing the names of the various collections. This feature enables users to easily and swiftly navigate to their preferred collection, allowing them to explore the items within it effortlessly.
 
-### User Authentication: 
+- ### User Authentication: 
 Secure user authentication ensures a personalized experience for each member with their created items.
 
 
@@ -91,7 +86,7 @@ The project follows a structured organization to enhance maintainability and eas
 
 ## API Reference
 
-### API Description:
+- ### API Description:
 
 The API service serves as the backend for a product-focused website that facilitates user registration, login functionality, and navigation for both registered and guest users.
 
@@ -107,7 +102,7 @@ The API service serves as the backend for a product-focused website that facilit
 - **View Created Items:** Users can view all items they've created.
 - **Like Items:** Logged-in users (non-creators) can like items but cannot like their own created items.
 
-### Server
+- ### Server
 
 #### Usage
 
@@ -120,7 +115,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 ## API Endpoints
 
-### Authentication
+- ### Authentication
 
 #### BaseUrl
 
@@ -167,7 +162,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 }
 ```
 
-### Collections
+- ### Collections
 
 #### BaseUrl
 
@@ -194,7 +189,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 }
 ```
 
-### For both logged-in and guest users:
+- ### For both logged-in and guest users:
 
 ##### GET /:collectionName/:itemId/details
 
@@ -214,7 +209,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 }
 ```
 
-### For logged in users:
+- ### For logged in users:
 
 **Likes functionality**
 
@@ -253,7 +248,7 @@ Example structure:
 ]
 ```
 
-### For Owner users:
+- ### For Owner users:
 
 #### BaseUrl
 
