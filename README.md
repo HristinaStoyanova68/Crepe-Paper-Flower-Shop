@@ -6,6 +6,14 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
+2. [Tech Stack](#tech-stack)
+3. [Features](#features)
+4. [How it works](#how-it-works)
+5. [Project Structure](#project-structure)
+6. [API Reference](#api-reference)
+7. [API Endpoints](#api-endpoints)
+8. [License](#license)
+9. [Credits](#credits)
 
 
 ## Project Overview
