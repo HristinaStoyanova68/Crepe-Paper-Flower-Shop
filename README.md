@@ -132,7 +132,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 **Description: Register a new user.**
 
-**Request:**
+- _Request:_
 ```json
 {
     "username": "string",
@@ -140,7 +140,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
     "password": "string"
 }
 ```
-**Response:**
+- _Response:_
 ```json
 {
     "userData": "userData"
