@@ -101,14 +101,183 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 http://localhost:3030/users
 ```
 
-#### Register
+#### Register:
 
-```http
-  POST /register
+##### POST /register
+
+**Description: Register a new user.**
+
+**Request:**
+```json
+{
+    "username": "string",
+    "email": "string",
+    "password": "string"
+}
+```
+**Response:**
+```json
+{
+    "userData": "userData"
+}
 ```
 
-| Parameter | Type     | Description                |
-| `username` | `string` | :- **Required**.username----------------------- |
-| `email` | `string` | :- **Required**.email----------------------- |
-| `password` | `string` | :- **Required**.password----------------------- |
+##### POST /login
+
+**Description: Authenticate and log in a user.**
+**Request:**
+```json
+{
+    "username": "string",
+    "password": "string"
+}
+```
+**Response:**
+```json
+{
+    "User Data": "userData"
+}
+```
+
+### Collections
+
+##### GET /bouquets
+
+**Description: Get Collection Bouquets.**
+**Request:**
+```json
+{
+    "collectionName": "string",
+}
+```
+**Response:**
+```json
+{
+    "collectionName ": "collectionName"
+}
+```
+
+##### GET /decorations
+
+**Description: Get Collection Decorations.**
+**Request:**
+```json
+{
+    "collectionName": "string",
+}
+```
+**Response:**
+```json
+{
+    "collectionName ": "collectionName"
+}
+```
+
+##### GET /gift_boxes
+
+**Description: Get Collection Gift Boxes.**
+**Request:**
+```json
+{
+    "collectionName": "string",
+}
+```
+**Response:**
+```json
+{
+    "collectionName ": "collectionName"
+}
+```
+### For both logged-in and guest users:
+
+##### GET /:collectionName/:itemId/details
+
+**Description: Get item and it's details.**
+**Request:**
+```json
+{
+    "collectionName": "string",
+    "itemId": "unique_id_here"
+}
+```
+**Response:**
+```json
+{
+    "itemData ": "itemData"
+}
+```
+
+### For logged in users:
+
+**Likes functionality**
+
+##### GET/:itemId
+
+**Description: Get all likes**
+**Request:**
+```json
+{
+    "itemId": "unique_id_here"
+}
+```
+**Response:**
+
+The response will be an array of objects, where the key for each object will be its index in the array, and the value will be "itemData".
+
+Example structure:
+
+```json
+[
+    {
+        "0": "likeData"
+    },
+    {
+        "1": "likeData"
+    },
+    {
+        "2": "likeData"
+    },
+    ...
+]
+```
+
+### For Owner users:
+
+##### GET /:collectionName/:itemId/edit
+
+**Description: Edit item's details.**
+**Request:**
+```json
+{
+    "collectionName": "string",
+    "itemId": "unique_id_here"
+}
+```
+**Response:**
+```json
+{
+    "itemData ": "itemData"
+}
+```
+
+##### GET /:collectionName/:itemId/remove
+
+**Description: Get item and it's details.**
+**Request:**
+```json
+{
+    "collectionName": "string",
+    "itemId": "unique_id_here"
+}
+```
+**Response:**
+```json
+{
+    "itemData ": "itemData"
+}
+```
+
+
+
+
 
