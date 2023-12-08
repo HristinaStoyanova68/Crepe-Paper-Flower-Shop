@@ -80,11 +80,11 @@ The API service serves as the backend for a product-focused website that facilit
 
 ### User Authentication:
 
-Registration: Allows users to create personalized accounts, enabling them to create, edit, or delete items.
+- **Registration:** Allows users to create personalized accounts, enabling them to create, edit, or delete items.
 
-Login: Registered users can log in to access additional functionalities.
+- **Login:** Registered users can log in to access additional functionalities.
 
-Guest Access: Unregistered users can browse the site but cannot perform CRUD operations or like items.
+- **Guest Access:** Unregistered users can browse the site but cannot perform CRUD operations or like items.
 
 ### User Actions:
 
