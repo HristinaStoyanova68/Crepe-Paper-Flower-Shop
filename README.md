@@ -25,14 +25,14 @@ SoftUni Course Project
 
 *Carousel Features:
 
-    1.Collection Carousel:
-    Our application features three distinct carousels showcasing the names of the following collections: bouquets, decorations, and gift boxes.
+1.Collection Carousel:
+Our application features three distinct carousels showcasing the names of the following collections: bouquets, decorations, and gift boxes.
 
-    2.Items Carousel:
-    These carousel offer a visual representation of each collection, allowing users to preview three elements from each category swiftly.
+2.Items Carousel:
+These carousel offer a visual representation of each collection, allowing users to preview three elements from each category swiftly.
 
-    3.Recent Additions Display:
-    Additionally, we provide a carousel displaying the most recent items added to our platform. This carousel showcases the latest additions from all collections, providing users with a quick glance at the most recent items available.
+3.Recent Additions Display:
+Additionally, we provide a carousel displaying the most recent items added to our platform. This carousel showcases the latest additions from all collections, providing users with a quick glance at the most recent items available.    
 
 Dropdown Navigation for Collections:
 
