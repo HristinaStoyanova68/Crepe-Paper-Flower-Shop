@@ -21,25 +21,14 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 
 ## Tech Stack
 
-
-
-
-[![JavaScript](https://img.shields.io/badge/JavaScript-brightgreen.svg)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
-
-
-
-
-
 [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
-![HTML](https://img.shields.io/badge/HTML-Language-blue)
-![CSS](https://img.shields.io/badge/CSS-Styles-orange)
-
-![React](https://img.shields.io/badge/React-Library-blue)
-![react-router-dom](https://img.shields.io/badge/react--router--dom-Library-red)
-
-![Vite](https://img.shields.io/badge/Vite-Tool-yellow)
-![Firebase](https://img.shields.io/badge/Firebase-Platform-orange)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-Framework-purple)
+[![HTML5](https://img.shields.io/badge/HTML5-Language-blue)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+[![CSS3](https://img.shields.io/badge/CSS3-Styles-orange)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+[![React](https://img.shields.io/badge/React-✓-blue)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+[![react-router-dom](https://img.shields.io/badge/react--router--dom-✓-red)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+[![Vite](https://img.shields.io/badge/Vite-Tool-yellow)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+[![Firebase](https://img.shields.io/badge/Firebase-Platform-orange)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-Framework-purple)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 
