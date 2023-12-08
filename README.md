@@ -7,6 +7,11 @@
 The project HRISTINA’S CRAFT WORLD ReactJS is an online platform where handmade things from and with crepe paper can be listed. Here you can enjoy exquisitely made crepe paper bouquets, also decorations for home or your unforgettable party, as well as see a variety of gift boxes decorated with crepe paper. On this platform, the user will have the opportunity to both view and browse their own crepe paper stuff. Let's share the pleasure of our hobby - to create beautiful flowers and decorations that will be part of the comfort of the day.
 
 
+## Project Overview
+
+HRISTINA’S CRAFT WORLD ReactJS aims to bring together people for whom the beauty of small things makes тхеир day beautiful and smiling. It is a place where anyone can view or showcase incredible flowers, bouquets, or decorations made solely from crepe paper.
+
+
 ## Badges
 
 
@@ -21,8 +26,6 @@ The project HRISTINA’S CRAFT WORLD ReactJS is an online platform where handmad
 ![Firebase](https://img.shields.io/badge/Firebase-Platform-orange)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-Framework-purple)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-
 
 
 ## Tech Stack
