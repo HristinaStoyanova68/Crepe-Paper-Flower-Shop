@@ -74,3 +74,139 @@ To install the project locally and start it, follow these steps:
 4. Start the application with the command `npm run dev`.
 5. Open a browser and go to the address `http://localhost:3000` to see HRISTINA'S CRAFT WORLD ReactJS in action.
 
+## API Description:
+
+The API service serves as the backend for a product-focused website that facilitates user registration, login functionality, and navigation for both registered and guest users.
+
+### User Authentication:
+
+Registration: Allows users to create personalized accounts, enabling them to create, edit, or delete items.
+Login: Registered users can log in to access additional functionalities.
+Guest Access: Unregistered users can browse the site but cannot perform CRUD operations or like items.
+
+### User Actions:
+
+Create, Edit, Delete Items: Logged-in users have the ability to create, modify, and delete items.
+View Created Items: Users can view all items they've created.
+Like Items: Logged-in users (non-creators) can like items but cannot like their own created items.
+
+### API Endpoints:
+
+POST /register
+
+Description: Register a new user.
+Request:
+{
+    "username": "string",
+    "email": "string",
+    "password": "string"
+}
+Response:
+{
+    "User Data": "userData"
+}
+POST /login
+
+Description: Authenticate and log in a user.
+Request:
+{
+    "username": "string",
+    "password": "string"
+}
+Response:
+{
+    "User Data": "userData"
+}
+
+GET /bouquets
+
+Description: Get Collection Bouquets.
+Request:
+{
+    "collectionName": "string",
+}
+Response:
+{
+    "collectionName ": "collectionName"
+}
+
+GET /decorations
+
+Description: Get Collection Decorations.
+Request:
+{
+    "collectionName": "string",
+}
+Response:
+{
+    "collectionName ": "collectionName"
+}
+
+GET /gift_boxes
+
+Description: Get Collection Gift Boxes.
+Request:
+{
+    "collectionName": "string",
+}
+Response:
+{
+    "collectionName ": "collectionName"
+}
+
+#### For both logged-in and guest users:
+
+GET /:collectionName/:itemId/details
+
+Description: Get item and it's details.
+Request:
+{
+    "collectionName": "string",
+    "itemId": "unique_id_here"
+}
+Response:
+{
+    "itemData ": "itemData"
+}
+
+#### For Owner users:
+
+GET /:collectionName/:itemId/edit
+
+Description: Edit item's details.
+Request:
+{
+    "collectionName": "string",
+    "itemId": "unique_id_here"
+}
+Response:
+{
+    "itemData ": "itemData"
+}
+
+GET /:collectionName/:itemId/remove
+
+Description: Get item and it's details.
+Request:
+{
+    "collectionName": "string",
+    "itemId": "unique_id_here"
+}
+Response:
+{
+    "itemData ": "itemData"
+}
+
+
+
+
+GET /items <!-- Explanation: Retrieve all items (for both logged-in and guest users) -->
+
+POST /items <!-- Explanation: Create a new item -->
+
+PUT /items/:id <!-- Explanation: Update an existing item -->
+
+DELETE /items/:id <!-- Explanation: Delete an item -->
+
+POST /items/:id/like <!-- Explanation: Like an item -->
+
