@@ -64,6 +64,20 @@ All changes made to the collections, including additions and modifications, are 
 Any logged-in user who is not the owner of an item can like it, and the count of likes is displayed on the item's screen.
 - **Guest Visitors:** 
 Unauthenticated visitors can browse all collections and their contents but cannot add, modify, delete, or like items within the collections.
+
+## Project Structure
+
+The project follows a structured organization to enhance maintainability and ease of navigation. Here's a brief overview of the main directories and their purposes:
+
+- **/client:**
+ Contains the frontend application built with React.
+
+- **/public:**
+ Static assets and HTML template.
+
+- **/src:**
+ React components, styles, and application logic.
+
 ## API Reference
 
 ### API Description:
@@ -92,6 +106,8 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 > cd server
 > node server.js
 ```
+
+## API Endpoints
 
 ### Authentication
 
@@ -123,6 +139,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 ##### POST /login
 
 **Description: Authenticate and log in a user.**
+
 **Request:**
 ```json
 {
@@ -139,9 +156,14 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 ### Collections
 
+#### BaseUrl
+
+`http://localhost:3030/data`
+
 ##### GET /bouquets
 
 **Description: Get Collection Bouquets.**
+
 **Request:**
 ```json
 {
@@ -158,6 +180,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 ##### GET /decorations
 
 **Description: Get Collection Decorations.**
+
 **Request:**
 ```json
 {
@@ -174,6 +197,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 ##### GET /gift_boxes
 
 **Description: Get Collection Gift Boxes.**
+
 **Request:**
 ```json
 {
@@ -186,11 +210,13 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
     "collectionName ": "collectionName"
 }
 ```
+
 ### For both logged-in and guest users:
 
 ##### GET /:collectionName/:itemId/details
 
 **Description: Get item and it's details.**
+
 **Request:**
 ```json
 {
@@ -209,9 +235,14 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 **Likes functionality**
 
+#### BaseUrl
+
+`http://localhost:3030/data/likes`
+
 ##### GET/:itemId
 
 **Description: Get all likes**
+
 **Request:**
 ```json
 {
@@ -241,9 +272,14 @@ Example structure:
 
 ### For Owner users:
 
+#### BaseUrl
+
+`http://localhost:3030/data`
+
 ##### GET /:collectionName/:itemId/edit
 
 **Description: Edit item's details.**
+
 **Request:**
 ```json
 {
@@ -261,6 +297,7 @@ Example structure:
 ##### GET /:collectionName/:itemId/remove
 
 **Description: Get item and remove it.**
+
 **Request:**
 ```json
 {
@@ -274,19 +311,6 @@ Example structure:
     "success": true,
 }
 ```
-
-## Project Structure
-
-The project follows a structured organization to enhance maintainability and ease of navigation. Here's a brief overview of the main directories and their purposes:
-
-- **/client:**
- Contains the frontend application built with React.
-
-- **/public:**
- Static assets and HTML template.
-
-- **/src:**
- React components, styles, and application logic.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
