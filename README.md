@@ -19,6 +19,10 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 
 **HRISTINA’S CRAFT WORLD ReactJS** aims to bring together people for whom the beauty of small things makes тхеир day beautiful and smiling. It is a place where anyone can view or showcase incredible flowers, bouquets, or decorations made solely from crepe paper.
 
+## Project deployment
+
+**HRISTINA’S CRAFT WORLD ReactJS** is deployed on a free hosting service [Firebase](https://firebase.google.com/). You have the opportunity to experience its features firsthand. To access the live version, simply visit [HRISTINA’S CRAFT WORLD ReactJS](https://hristina-s-craft-world-reactjs.firebaseapp.com/).
+
 ## Tech Stack
 
 [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
