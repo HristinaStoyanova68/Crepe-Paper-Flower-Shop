@@ -21,6 +21,9 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 
 ## Tech Stack
 
+
+[![JavaScript](https://img.shields.io/badge/JavaScript-Project-brightgreen.svg)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML-Language-blue)
 ![CSS](https://img.shields.io/badge/CSS-Styles-orange)
@@ -83,6 +86,9 @@ The project follows a structured organization to enhance maintainability and eas
 
 - **/src:**
  React components, styles, and application logic.
+
+ - **/server:**
+ REST service, provided for educational purposes by **SoftUni Practice Server**.
 
 ## API Reference
 
