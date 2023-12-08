@@ -97,7 +97,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 #### BaseUrl
 
-<code>http://localhost:3030/users</code>
+`http://localhost:3030/users`
 
 #### Register:
 
@@ -260,7 +260,9 @@ Example structure:
 
 ##### GET /:collectionName/:itemId/remove
 
-**Description: Get item and it's details.**
+<span style="font-style: italic;">Description: </span>Get item and remove it.
+
+**Description: Get item and remove it.**
 **Request:**
 ```json
 {
@@ -271,7 +273,7 @@ Example structure:
 **Response:**
 ```json
 {
-    "itemData ": "itemData"
+    "success": true,
 }
 ```
 
@@ -287,6 +289,12 @@ The project follows a structured organization to enhance maintainability and eas
 
 - **/src:**
  React components, styles, and application logic.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
+
+## Credits
+This documentation is writen with the help of [ChatGPT](https://www.openai.com/chatgpt/)
 
 
 
