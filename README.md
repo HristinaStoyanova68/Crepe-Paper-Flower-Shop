@@ -27,7 +27,7 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 [![React](https://img.shields.io/badge/React-v18.2.0-blue)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![React Router Dom](https://img.shields.io/badge/React_Router_Dom-v6.18.0-blue.svg)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![Vite](https://img.shields.io/badge/Vite-v4.4.5-yellow)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
-[![Firebase](https://img.shields.io/badge/Firebase-Platform-orange)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
+[![Firebase](https://img.shields.io/badge/Firebase-✓-orange)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.3.2-purple)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
