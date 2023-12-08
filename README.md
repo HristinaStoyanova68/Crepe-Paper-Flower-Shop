@@ -61,9 +61,13 @@ To install the project locally and start it, follow these steps:
 
 ## Technologies and Tools
 
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML-Language-blue)
+![CSS](https://img.shields.io/badge/CSS-Styles-orange)
+
 ![React](https://img.shields.io/badge/React-Library-blue)
+![react-router-dom](https://img.shields.io/badge/react--router--dom-Library-red)
 ![Vite](https://img.shields.io/badge/Vite-Tool-yellow)
-![Node.js](https://img.shields.io/badge/Node.js-Platform-green)
 ![Firebase](https://img.shields.io/badge/Firebase-Platform-orange)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-Framework-purple)
 
