@@ -131,9 +131,8 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 ##### POST /register
 
 **Description: Register a new user.**
-
 - _Request:_
-```json
+```
 {
     "username": "string",
     "email": "string",
