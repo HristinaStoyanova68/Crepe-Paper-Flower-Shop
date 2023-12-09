@@ -179,7 +179,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 **3. For both logged-in and guest users:**
 
-- **GET /:collectionName/:itemId/details**
+- **GET /:collectionName/:itemId**
 
     - _Description:_ Get item and it's details.
 
@@ -197,11 +197,51 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
     }
     ```
 
-**4. For logged in users (not owners) - Likes functionality**
+**4. For logged in users (ownres) - edit and remove item**
+
+**BaseUrl:** `http://localhost:3030/data`
+
+- **PUT /:collectionName/:itemId**
+
+    - _Description:_ Edit item's details.
+
+    - _Request:_
+    ```json
+    {
+        "collectionName": "string",
+        "itemId": "unique_id_here"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "itemData ": "itemData"
+    }
+    ```
+
+- **DELETE /:collectionName/:itemId**
+
+    - _Description:_ Get item and remove it.
+
+    - _Request:_
+    ```json
+    {
+        "collectionName": "string",
+        "itemId": "unique_id_here"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "success": true,
+    }
+    ```
+
+**5. For logged in users (not owners) - Likes functionality**
 
 **BaseUrl:** `http://localhost:3030/data/likes`
 
-- **GET /:itemId**
+- **GET ?where=itemId=:itemId**
 
     - _Description:_ Get all likes
 
@@ -229,46 +269,6 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
             "2": "likeData"
         }
     ]
-    ```
-
-**5. For logged in users (ownres) - edit and remove item**
-
-**BaseUrl:** `http://localhost:3030/data`
-
-- **GET /:collectionName/:itemId/edit**
-
-    - _Description:_ Edit item's details.
-
-    - _Request:_
-    ```json
-    {
-        "collectionName": "string",
-        "itemId": "unique_id_here"
-    }
-    ```
-    - _Response:_
-    ```json
-    {
-        "itemData ": "itemData"
-    }
-    ```
-
-- **GET /:collectionName/:itemId/remove**
-
-    - _Description:_ Get item and remove it.
-
-    - _Request:_
-    ```json
-    {
-        "collectionName": "string",
-        "itemId": "unique_id_here"
-    }
-    ```
-    - _Response:_
-    ```json
-    {
-        "success": true,
-    }
     ```
 
 ## License
