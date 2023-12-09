@@ -39,10 +39,7 @@ export const AuthProvider = ({
     const registerSubmitHandler = async (values) => {
 
         try {
-            // if (values.username === '' || values.email === '' || values.password === '') {
-            //     throw new Error('All fields are required!');
-            // }
-
+            
             inputValuesValidation(values);
     
             const result = await authService.register(values.username, values.email, values.password);

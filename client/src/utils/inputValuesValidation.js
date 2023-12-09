@@ -15,7 +15,7 @@ export default function inputValuesValidation(values) {
             throw new Error('Username must be less than 18 characters!');
         }
 
-        const usernameRegex = /^[a-zA-Z0-9_]+$/;
+        const usernameRegex = /^[a-zA-Z0-9_\-]+$/;
 
         const isValidUsername = (username) => {
             return usernameRegex.test(username);
@@ -58,7 +58,7 @@ export default function inputValuesValidation(values) {
         };
 
         if (isValidPassword(password) === false) {
-            throw new Error('Invalid password');
+            throw new Error('Your passord must contain lowercase and uppercase and numbers');
         }
     }
 
@@ -72,13 +72,22 @@ export default function inputValuesValidation(values) {
     }
 
     if (values.hasOwnProperty('name')) {
-
         const name = values.name;
-        console.log(name);
 
         if (name === '') {
             throw new Error('Name is required!');
         }
+
+        const nameRegex = /^[A-Za-z0-9\s\-_]{4,50}$/;
+
+        const isValidName = (name) => {
+            return nameRegex.test(name);
+        }
+
+        if (isValidName === false) {
+            throw new Error('Name must contain at least four characters!');
+        }
+
     }
 
     if (values.hasOwnProperty('imageUrl')) {
@@ -105,6 +114,16 @@ export default function inputValuesValidation(values) {
 
         if (description === '') {
             throw new Error('Description is required!');
+        }
+
+        const descriptionRegex = /^[A-Za-z0-9\s\-_]{4,200}$/;
+
+        const isValidDescription = (description) => {
+            return descriptionRegex.test(description);
+        }
+
+        if (isValidDescription === false) {
+            throw new Error('Descripion must contain at least four characters!!');
         }
     }
 
