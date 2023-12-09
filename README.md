@@ -80,7 +80,7 @@ The project follows a structured organization to enhance maintainability and eas
 - **/client:**
  Contains the frontend application built with React.
 
-- **/public:**
+    - `/public:`
  Static assets and HTML template.
 
 - **/src:**
