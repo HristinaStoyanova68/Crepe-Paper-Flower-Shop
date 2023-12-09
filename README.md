@@ -177,7 +177,27 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
     }
     ```
 
-**3. For both logged-in and guest users:**
+**3. For logged-in users:**
+
+- **POST /:collectionName/itemData**
+
+    - _Description:_ Create item.
+
+    - _Request:_
+    ```json
+    {
+        "collectionName": "string",
+        "itemData": "itemData"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "itemData": "itemData"
+    }
+    ```   
+
+**4. For both logged-in and guest users:**
 
 - **GET /:collectionName/:itemId**
 
@@ -197,7 +217,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
     }
     ```
 
-**4. For logged in users (ownres) - edit and remove item**
+**5. For logged in users (ownres) - edit and remove item**
 
 **BaseUrl:** `http://localhost:3030/data`
 
@@ -237,7 +257,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
     }
     ```
 
-**5. For logged in users (not owners) - Likes functionality**
+**6. For logged in users (not owners) - Likes functionality**
 
 **BaseUrl:** `http://localhost:3030/data/likes`
 
