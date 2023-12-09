@@ -129,7 +129,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 #### Register:
 
 - **POST /register**
-**Description: Register and log in a new user.**
+_Description:_ Register and log in a new user.**
 - _Request:_
 ```
 {
