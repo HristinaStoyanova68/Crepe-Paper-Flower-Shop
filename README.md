@@ -128,9 +128,8 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 #### Register:
 
-##### POST /register
-
-**Description: Register a new user.**
+- **POST /register**
+**Description: Register and log in a new user.**
 - _Request:_
 ```
 {
@@ -142,7 +141,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 - _Response:_
 ```json
 {
-    "userData": "userData"
+    "User Data": "userData"
 }
 ```
 
