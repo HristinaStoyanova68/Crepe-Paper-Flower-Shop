@@ -129,7 +129,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 - **POST /register**
 
 _Description:_ Register and log in a new user.
-    - _Request:_
+- _Request:_
 ```json
 {
     "username": "string",
@@ -137,7 +137,7 @@ _Description:_ Register and log in a new user.
     "password": "string"
 }
 ```
-    - _Response:_
+- _Response:_
 ```json
 {
     "User Data": "userData"
@@ -148,14 +148,14 @@ _Description:_ Register and log in a new user.
 
 _Description:_ Authenticate and log in a user.
 
-    - _Request:_
+- _Request:_
 ```json
 {
     "username": "string",
     "password": "string"
 }
 ```
-    - _Response:_
+- _Response:_
 ```json
 {
     "User Data": "userData"
@@ -176,13 +176,13 @@ _Description:_ Authenticate and log in a user.
 
 _Description:_ Get Collections
 
-    - _Request:_
+- _Request:_
 ```json
 {
     "collectionName": "string",
 }
 ```
-    - _Response:_
+- _Response:_
 ```json
 {
     "collectionName ": "collectionName"
@@ -195,14 +195,14 @@ _Description:_ Get Collections
 
 _Description:_ Get item and it's details.
 
-    - _Request:_
+- _Request:_
 ```json
 {
     "collectionName": "string",
     "itemId": "unique_id_here"
 }
 ```
-    - _Response:_
+- _Response:_
 ```json
 {
     "itemData ": "itemData"
@@ -219,13 +219,13 @@ _Description:_ Get item and it's details.
 
 _Description:_ Get all likes
 
-    - _Request:_
+- _Request:_
 ```json
 {
     "itemId": "unique_id_here"
 }
 ```
-    - _Response:_
+- _Response:_
 
 The response will be an array of objects, where the key for each object will be its index in the array, and the value will be "itemData".
 
@@ -256,14 +256,14 @@ Example structure:
 
 _Description:_ Edit item's details.
 
-    - _Request:_
+- _Request:_
 ```json
 {
     "collectionName": "string",
     "itemId": "unique_id_here"
 }
 ```
-    - _Response:_
+- _Response:_
 ```json
 {
     "itemData ": "itemData"
@@ -274,14 +274,14 @@ _Description:_ Edit item's details.
 
 _Description:_ Get item and remove it.
 
-    - _Request:_
+- _Request:_
 ```json
 {
     "collectionName": "string",
     "itemId": "unique_id_here"
 }
 ```
-    - _Response:_
+- _Response:_
 ```json
 {
     "success": true,
