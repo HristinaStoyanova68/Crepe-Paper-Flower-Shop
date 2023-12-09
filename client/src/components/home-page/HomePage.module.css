@@ -1,6 +1,7 @@
 .banner_section {
     width: 100%;
-    float: left;    
+    float: left; 
+    margin: 6em auto;   
 }
 
 .layout_padding {
