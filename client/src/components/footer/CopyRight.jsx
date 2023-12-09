@@ -5,7 +5,7 @@ export default function CopyRight() {
     return (
         <div className={styles["copyright_section"]}>
          <div className="container">
-            <p className={styles["copyright_text"]}>© 2023, HRISTINA STOYANOVA</p>
+            <p className={styles["copyright_text"]}>© 2023, Hristina Stoyanova</p>
          </div>
       </div>
     );
