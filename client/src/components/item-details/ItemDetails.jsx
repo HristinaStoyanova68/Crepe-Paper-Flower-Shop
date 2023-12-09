@@ -60,7 +60,6 @@ export default function ItemDetails() {
                         </p>
                     </div>
 
-                    {/* <!--Edit and Delete are only for creator--> */}
                     <div className={styles["action-buttons"]}>
                     {isAuthenticated && isOwner &&
                             <>
@@ -69,7 +68,6 @@ export default function ItemDetails() {
                             </>
                         } 
                     
-                        {/* <!--Bonus - Only for logged-in users ( not authors )--> */}
                         {isAuthenticated && !like && !isOwner &&
 
                             <>

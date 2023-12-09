@@ -1341,92 +1341,92 @@
     };
     var seedData = {
         bouquets: {
-            // "862919e9-19ac-492d-a7ae-0213163b8d9e": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Bouquets",
-            //     "name": "Yellow rose",
-            //     "imageUrl": "https://shop.ogcrafts.com/wp-content/uploads/2021/03/yellow-crepe-paper-rose-flower.jpg",
-            //     "description": "A soft yellow rose for your loved ones",
-            //     "_createdOn": 1701648951038,
-            //     "_id": "862919e9-19ac-492d-a7ae-0213163b8d9e"
-            // },
-            // "bea8279b-d87b-4e65-a513-f7ad594c7c7f": {
-            //     "collectionName": "Bouquets",
-            //     "name": "Bouquet of peonies",
-            //     "imageUrl": "https://i.pinimg.com/originals/51/40/09/514009b3aa1567af7e29ccd64fa1f9fd.jpg",
-            //     "description": "Bouquet of peonies for your loved ones",
-            //     "_createdOn": 1701649050007,
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "_updatedOn": 1701649351219,
-            //     "_id": "bea8279b-d87b-4e65-a513-f7ad594c7c7f"
-            // },
-            // "d89310c1-183e-430d-8671-0106c6e060dd": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Bouquets",
-            //     "name": "Bouquet of spring flowers",
-            //     "imageUrl": "https://farm9.staticflickr.com/8595/16638917945_bc1809faeb.jpg",
-            //     "description": "Bouquet of spring flowers for your loved ones",
-            //     "_createdOn": 1701649154177,
-            //     "_id": "d89310c1-183e-430d-8671-0106c6e060dd"
-            // }
+            "862919e9-19ac-492d-a7ae-0213163b8d9e": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Bouquets",
+                "name": "Yellow rose",
+                "imageUrl": "https://shop.ogcrafts.com/wp-content/uploads/2021/03/yellow-crepe-paper-rose-flower.jpg",
+                "description": "A soft yellow rose for your loved ones",
+                "_createdOn": 1701648951038,
+                "_id": "862919e9-19ac-492d-a7ae-0213163b8d9e"
+            },
+            "bea8279b-d87b-4e65-a513-f7ad594c7c7f": {
+                "collectionName": "Bouquets",
+                "name": "Bouquet of peonies",
+                "imageUrl": "https://i.pinimg.com/originals/51/40/09/514009b3aa1567af7e29ccd64fa1f9fd.jpg",
+                "description": "Bouquet of peonies for your loved ones",
+                "_createdOn": 1701649050007,
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "_updatedOn": 1701649351219,
+                "_id": "bea8279b-d87b-4e65-a513-f7ad594c7c7f"
+            },
+            "d89310c1-183e-430d-8671-0106c6e060dd": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Bouquets",
+                "name": "Bouquet of spring flowers",
+                "imageUrl": "https://farm9.staticflickr.com/8595/16638917945_bc1809faeb.jpg",
+                "description": "Bouquet of spring flowers for your loved ones",
+                "_createdOn": 1701649154177,
+                "_id": "d89310c1-183e-430d-8671-0106c6e060dd"
+            }
         },
         decorations: {
-            // "e7a34d66-1890-461f-a7e3-48e95bff0f47": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Decorations",
-            //     "name": "Wedding chair decor",
-            //     "imageUrl": "https://d2s9i74h8duohm.cloudfront.net/wp-content/uploads/2019/12/Wedding_Chairs_Paper_Flowers_2-724x724.jpg",
-            //     "description": "Wedding chair decor",
-            //     "_createdOn": 1701649633706,
-            //     "_id": "e7a34d66-1890-461f-a7e3-48e95bff0f47"
-            // },
-            // "cc16bf81-ddc6-4774-99f5-508ca992c0ad": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Decorations",
-            //     "name": "Wall decor",
-            //     "imageUrl": "https://m.media-amazon.com/images/I/61efySmSMfL._AC_UF350,350_QL80_.jpg",
-            //     "description": "Wall decor",
-            //     "_createdOn": 1701649782489,
-            //     "_id": "cc16bf81-ddc6-4774-99f5-508ca992c0ad"
-            // },
-            // "8878441d-b618-4972-8672-928dee2886ab": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Decorations",
-            //     "name": "Large decor",
-            //     "imageUrl": "https://i.pinimg.com/736x/fa/af/30/faaf30c3d9cbf480fce5b642d6728220.jpg",
-            //     "description": "Large decor",
-            //     "_createdOn": 1701649870077,
-            //     "_id": "8878441d-b618-4972-8672-928dee2886ab"
-            // }
+            "e7a34d66-1890-461f-a7e3-48e95bff0f47": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Decorations",
+                "name": "Wedding chair decor",
+                "imageUrl": "https://d2s9i74h8duohm.cloudfront.net/wp-content/uploads/2019/12/Wedding_Chairs_Paper_Flowers_2-724x724.jpg",
+                "description": "Wedding chair decor",
+                "_createdOn": 1701649633706,
+                "_id": "e7a34d66-1890-461f-a7e3-48e95bff0f47"
+            },
+            "cc16bf81-ddc6-4774-99f5-508ca992c0ad": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Decorations",
+                "name": "Wall decor",
+                "imageUrl": "https://m.media-amazon.com/images/I/61efySmSMfL._AC_UF350,350_QL80_.jpg",
+                "description": "Wall decor",
+                "_createdOn": 1701649782489,
+                "_id": "cc16bf81-ddc6-4774-99f5-508ca992c0ad"
+            },
+            "8878441d-b618-4972-8672-928dee2886ab": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Decorations",
+                "name": "Large decor",
+                "imageUrl": "https://i.pinimg.com/736x/fa/af/30/faaf30c3d9cbf480fce5b642d6728220.jpg",
+                "description": "Large decor",
+                "_createdOn": 1701649870077,
+                "_id": "8878441d-b618-4972-8672-928dee2886ab"
+            }
         },
         gift_boxes: {
-            // "1934c02f-8a49-48b3-9d49-40fe96e9a8da": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Gift Boxes",
-            //     "name": "Boxes",
-            //     "imageUrl": "https://cdn11.bigcommerce.com/s-018f7/images/stencil/2048x2048/products/1073/1519/image000000_12__30669.1695326686.JPG?c=2",
-            //     "description": "Boxes",
-            //     "_createdOn": 1701650162891,
-            //     "_id": "1934c02f-8a49-48b3-9d49-40fe96e9a8da"
-            // },
-            // "ea8b6b69-58c8-42e3-83ac-f0ffe236a437": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Gift Boxes",
-            //     "name": "Small boxes",
-            //     "imageUrl": "https://c8.alamy.com/comp/BGKFMA/small-gift-boxes-wrapped-in-tissue-paper-BGKFMA.jpg",
-            //     "description": "Small boxes",
-            //     "_createdOn": 1701650229410,
-            //     "_id": "ea8b6b69-58c8-42e3-83ac-f0ffe236a437"
-            // },
-            // "7fc5e562-9cae-4b8a-b671-310649a42727": {
-            //     "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            //     "collectionName": "Gift Boxes",
-            //     "name": "Paper-Orchid boxes",
-            //     "imageUrl": "https://d2s9i74h8duohm.cloudfront.net/wp-content/uploads/2013/06/PaperOrchidGiftTopperTN.jpg",
-            //     "description": "Paper-Orchid boxes",
-            //     "_createdOn": 1701650277794,
-            //     "_id": "7fc5e562-9cae-4b8a-b671-310649a42727"
-            // },
+            "1934c02f-8a49-48b3-9d49-40fe96e9a8da": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Gift Boxes",
+                "name": "Boxes",
+                "imageUrl": "https://cdn11.bigcommerce.com/s-018f7/images/stencil/2048x2048/products/1073/1519/image000000_12__30669.1695326686.JPG?c=2",
+                "description": "Boxes",
+                "_createdOn": 1701650162891,
+                "_id": "1934c02f-8a49-48b3-9d49-40fe96e9a8da"
+            },
+            "ea8b6b69-58c8-42e3-83ac-f0ffe236a437": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Gift Boxes",
+                "name": "Small boxes",
+                "imageUrl": "https://c8.alamy.com/comp/BGKFMA/small-gift-boxes-wrapped-in-tissue-paper-BGKFMA.jpg",
+                "description": "Small boxes",
+                "_createdOn": 1701650229410,
+                "_id": "ea8b6b69-58c8-42e3-83ac-f0ffe236a437"
+            },
+            "7fc5e562-9cae-4b8a-b671-310649a42727": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "collectionName": "Gift Boxes",
+                "name": "Paper-Orchid boxes",
+                "imageUrl": "https://d2s9i74h8duohm.cloudfront.net/wp-content/uploads/2013/06/PaperOrchidGiftTopperTN.jpg",
+                "description": "Paper-Orchid boxes",
+                "_createdOn": 1701650277794,
+                "_id": "7fc5e562-9cae-4b8a-b671-310649a42727"
+            },
         }
     };
     var rules$1 = {

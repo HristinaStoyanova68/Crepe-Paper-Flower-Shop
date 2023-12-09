@@ -13,8 +13,6 @@ export const getAll = async () => {
 }
 
 export const getCollection = async (collectionName) => {
-    // const response = await fetch(`${baseUrl}${collectionName}`);
-    // const result = await response.json();
 
     const result = await request.get(`${baseUrl}${collectionName}`);
 
