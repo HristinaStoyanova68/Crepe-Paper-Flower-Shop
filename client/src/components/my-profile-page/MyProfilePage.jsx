@@ -24,6 +24,7 @@ export default function MyProfilePage() {
             {items.length > 0 &&
                 <div id="main_slider" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
+                        <h2 className={styles["my_profile_title"]}>My Profile Content</h2>
                         {items.map((item, index) => {
                             const collectionName = convertCollectionName(item.collectionName);
 

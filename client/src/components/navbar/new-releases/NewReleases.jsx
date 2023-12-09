@@ -12,13 +12,13 @@ export default function NewReleases() {
 
     useEffect(() => {
         itemService.getAll()
-        .then(result => {
-            const sortedNewReleases = result.sort((a, b) => a._createdOn - b._createdOn).slice(-3).reverse();
-            setNewReleases(state => state = [...sortedNewReleases]);
-        })
-        .catch(error => {
-            throw error;
-        });
+            .then(result => {
+                const sortedNewReleases = result.sort((a, b) => a._createdOn - b._createdOn).slice(-3).reverse();
+                setNewReleases(state => state = [...sortedNewReleases]);
+            })
+            .catch(error => {
+                throw error;
+            });
     }, []);
 
     return (
@@ -26,6 +26,7 @@ export default function NewReleases() {
             {newReleases.length > 0 &&
                 <div id="main_slider" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
+                        <h2 className={styles["new_releases_title"]}>New Releases</h2>
                         {newReleases.map((newRelease, index) => {
                             const collectionName = convertCollectionName(newRelease.collectionName);
 
