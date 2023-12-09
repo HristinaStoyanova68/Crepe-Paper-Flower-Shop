@@ -4,6 +4,19 @@
     padding-bottom: 100px;
 }
 
+.collection_section p {
+    margin: 3.4em auto;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    padding: 1em;
+    width: 40%;
+    background-color: rgb(245, 212, 212, 0.8);
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
 .collection_title {
     width: 100%;
     font-size: 40px;
