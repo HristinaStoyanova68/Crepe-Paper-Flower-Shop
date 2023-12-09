@@ -91,7 +91,7 @@ The project follows a structured organization to enhance maintainability and eas
 
 ## API Reference
 
-**User Authentication:**
+## **User Authentication:**
 
 - **Registration:** Allows users to create personalized accounts, enabling them to create, edit, or delete items.
 - **Login:** Registered users can log in to access additional functionalities.
