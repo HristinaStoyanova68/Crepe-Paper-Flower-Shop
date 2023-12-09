@@ -128,7 +128,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 - **POST /register**
 
-_Description:_ Register and log in a new user.**
+_Description:_ Register and log in a new user.
 - _Request:_
 ```json
 {
@@ -146,7 +146,7 @@ _Description:_ Register and log in a new user.**
 
 - **POST /login**
 
-_Description:_ Authenticate and log in a user.**
+_Description:_ Authenticate and log in a user.
 
 - _Request:_
 ```json
@@ -174,7 +174,7 @@ _Description:_ Authenticate and log in a user.**
 
 - **GET /gift_boxes**
 
-_Description:_ Get Collections**
+_Description:_ Get Collections
 
 - _Request:_
 ```json
@@ -193,7 +193,7 @@ _Description:_ Get Collections**
 
 - **GET /:collectionName/:itemId/details**
 
-_Description:_ Get item and it's details.**
+_Description:_ Get item and it's details.
 
 - _Request:_
 ```json
@@ -217,7 +217,7 @@ _Description:_ Get item and it's details.**
 
 - **GET/:itemId**
 
-_Description:_ Get all likes**
+_Description:_ Get all likes
 
 - _Request:_
 ```json
@@ -254,7 +254,7 @@ Example structure:
 
 - **GET /:collectionName/:itemId/edit**
 
-_Description:_ Edit item's details.**
+_Description:_ Edit item's details.
 
 - _Request:_
 ```json
@@ -272,7 +272,7 @@ _Description:_ Edit item's details.**
 
 - **GET /:collectionName/:itemId/remove**
 
-_Description:_ Get item and remove it.**
+_Description:_ Get item and remove it.
 
 - _Request:_
 ```json
