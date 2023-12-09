@@ -7,7 +7,6 @@ import styles from './ItemEdit.module.css';
 import * as itemService from '../../services/itemsService';
 import { pathToUrl } from '../../utils/pathUtils';
 import Path from '../../paths';
-// import { IsOwnerGuardProvider } from '../../contexts/isOwnerContext';
 
 const editFormKeys = {
     CollectionName: 'collectionName',
@@ -56,7 +55,6 @@ export default function ItemEdit() {
     }
 
     return (
-        // <IsOwnerGuardProvider collectionName={collectionName} item={item}>
             <section className={styles.edit}>
                 <div className={generalStyles.form}>
                     <h2>Edit Item</h2>
@@ -91,6 +89,5 @@ export default function ItemEdit() {
                     </form>
                 </div>
             </section>
-        // </IsOwnerGuardProvider>
     );
 }

@@ -118,39 +118,39 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 - **POST /register**
 
-_Description:_ Register and log in a new user.
-- _Request:_
-```json
-{
-    "username": "string",
-    "email": "string",
-    "password": "string"
-}
-```
-- _Response:_
-```json
-{
-    "User Data": "userData"
-}
-```
+    - _Description:_ Register and log in a new user.
+    - _Request:_
+    ```json
+    {
+        "username": "string",
+        "email": "string",
+        "password": "string"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "User Data": "userData"
+    }
+    ```
 
 - **POST /login**
 
-_Description:_ Authenticate and log in a user.
+    - _Description:_ Authenticate and log in a user.
 
-- _Request:_
-```json
-{
-    "username": "string",
-    "password": "string"
-}
-```
-- _Response:_
-```json
-{
-    "User Data": "userData"
-}
-```
+    - _Request:_
+    ```json
+    {
+        "username": "string",
+        "password": "string"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "User Data": "userData"
+    }
+    ```
 
 **2. Collections**
 
@@ -162,115 +162,114 @@ _Description:_ Authenticate and log in a user.
 
 - **GET /gift_boxes**
 
-_Description:_ Get Collections
+    - _Description:_ Get Collections
 
-- _Request:_
-```json
-{
-    "collectionName": "string",
-}
-```
-- _Response:_
-```json
-{
-    "collectionName ": "collectionName"
-}
-```
+    - _Request:_
+    ```json
+    {
+        "collectionName": "string",
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "collectionName ": "collectionName"
+    }
+    ```
 
 **3. For both logged-in and guest users:**
 
 - **GET /:collectionName/:itemId/details**
 
-_Description:_ Get item and it's details.
+    - _Description:_ Get item and it's details.
 
-- _Request:_
-```json
-{
-    "collectionName": "string",
-    "itemId": "unique_id_here"
-}
-```
-- _Response:_
-```json
-{
-    "itemData ": "itemData"
-}
-```
+    - _Request:_
+    ```json
+    {
+        "collectionName": "string",
+        "itemId": "unique_id_here"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "itemData ": "itemData"
+    }
+    ```
 
-**4. For logged in users - Likes functionality**
+**4. For logged in users (not owners) - Likes functionality**
 
 **BaseUrl:** `http://localhost:3030/data/likes`
 
-- **GET/:itemId**
+- **GET /:itemId**
 
-_Description:_ Get all likes
+    - _Description:_ Get all likes
 
-- _Request:_
-```json
-{
-    "itemId": "unique_id_here"
-}
-```
-- _Response:_
-
-The response will be an array of objects, where the key for each object will be its index in the array, and the value will be "itemData".
-
-Example structure:
-
-```json
-[
+    - _Request:_
+    ```json
     {
-        "0": "likeData"
-    },
-    {
-        "1": "likeData"
-    },
-    {
-        "2": "likeData"
-    },
-    ...
-]
-```
+        "itemId": "unique_id_here"
+    }
+    ```
+    - _Response:_
 
-**5. For Owner users - edit and remove item**
+    The response will be an array of objects, where the key for each object will be its index in the array, and the value will be "itemData".
+
+    Example structure:
+
+    ```json
+    [
+        {
+            "0": "likeData"
+        },
+        {
+            "1": "likeData"
+        },
+        {
+            "2": "likeData"
+        }
+    ]
+    ```
+
+**5. For logged in users (ownres) - edit and remove item**
 
 **BaseUrl:** `http://localhost:3030/data`
 
 - **GET /:collectionName/:itemId/edit**
 
-_Description:_ Edit item's details.
+    - _Description:_ Edit item's details.
 
-- _Request:_
-```json
-{
-    "collectionName": "string",
-    "itemId": "unique_id_here"
-}
-```
-- _Response:_
-```json
-{
-    "itemData ": "itemData"
-}
-```
+    - _Request:_
+    ```json
+    {
+        "collectionName": "string",
+        "itemId": "unique_id_here"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "itemData ": "itemData"
+    }
+    ```
 
 - **GET /:collectionName/:itemId/remove**
 
-_Description:_ Get item and remove it.
+    - _Description:_ Get item and remove it.
 
-- _Request:_
-```json
-{
-    "collectionName": "string",
-    "itemId": "unique_id_here"
-}
-```
-- _Response:_
-```json
-{
-    "success": true,
-}
-```
+    - _Request:_
+    ```json
+    {
+        "collectionName": "string",
+        "itemId": "unique_id_here"
+    }
+    ```
+    - _Response:_
+    ```json
+    {
+        "success": true,
+    }
+    ```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.

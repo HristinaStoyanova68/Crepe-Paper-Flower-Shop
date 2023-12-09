@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 
 import styles from './HomePage.module.css';
 import Path from '../../paths';
-// import styles from './Footer.module.css';
 
 export default function HomePage() {
     return (
