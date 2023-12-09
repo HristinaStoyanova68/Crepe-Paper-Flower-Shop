@@ -15,9 +15,11 @@ export default function Logout() {
                 logoutHandler();
                 navigate(Path.Home);
             })
-            .catch(() => {
+            .catch(error => {
                 logoutHandler();
                 navigate(Path.Home);
+
+                throw error;
             });            
     }, []);
 

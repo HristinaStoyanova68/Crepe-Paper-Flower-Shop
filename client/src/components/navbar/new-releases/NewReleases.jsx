@@ -16,7 +16,9 @@ export default function NewReleases() {
             const sortedNewReleases = result.sort((a, b) => a._createdOn - b._createdOn).slice(-3).reverse();
             setNewReleases(state => state = [...sortedNewReleases]);
         })
-        .catch(err => console.log(err));
+        .catch(error => {
+            throw error;
+        });
     }, []);
 
     return (

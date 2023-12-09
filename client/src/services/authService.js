@@ -4,24 +4,36 @@ import Path from '../paths';
 const baseUrl = 'http://localhost:3030/users';
 
 export const login = async (email, password) => {
-    const result = await request.post(`${baseUrl}/login`, {
-        email,
-        password,
-    });
-
-    return result;
+    try {
+        const result = await request.post(`${baseUrl}/login`, {
+            email,
+            password,
+        });
+    
+        return result;
+    } catch (error) {
+        throw error;
+    }
 };
 
 export const register = (username, email, password) => {
-    const result = request.post(`${baseUrl}/register`, {
-        username,
-        email,
-        password,
-    });
-
-    return result;
+    try {
+        const result = request.post(`${baseUrl}/register`, {
+            username,
+            email,
+            password,
+        });
+    
+        return result;
+    } catch (error) {
+        throw error;
+    }
 };
 
 export const logout = async () => {
-    await request.get(`${baseUrl}/${Path.Logout}`);
+    try {
+        await request.get(`${baseUrl}/${Path.Logout}`);
+    } catch (error) {
+        throw error;
+    }
 }

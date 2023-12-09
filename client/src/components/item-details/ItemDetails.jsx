@@ -21,7 +21,9 @@ export default function ItemDetails() {
     useEffect(() => {
         itemService.getItem(collectionName, itemId)
             .then(setItem)
-            .catch(err => console.log(err));           
+            .catch(error => {
+                throw error;
+            });           
     }, [itemId]);
 
     useEffect(() => {
@@ -33,13 +35,20 @@ export default function ItemDetails() {
                 setLike(true);
             }
         })
-        .catch(err => console.log(err));
+        .catch(error => {
+            throw error;
+        });
     }, [like]);
 
     const likeHandler = async () => {
-        await likeService.like(itemId);
-
-        setLike(true);
+        try {
+            await likeService.like(itemId);
+    
+            setLike(true);
+        } catch (error) {
+            setLike(false);
+            throw error;
+        }
     }
     
     return (

@@ -30,7 +30,9 @@ export default function ItemEdit() {
             .then(result => {
                 setItem(result);
             })
-            .catch(err => console.log(err));
+            .catch(error => {
+                throw error;
+            });
     }, [itemId]);
 
     const editItemSubmitHandler = async (e) => {
@@ -42,8 +44,8 @@ export default function ItemEdit() {
             await itemService.edit(collectionName, itemId, values);
 
             navigate(pathToUrl(Path.ItemDetails, { collectionName, itemId }));
-        } catch (err) {
-            console.log(err);
+        } catch (error) {
+            throw error;
         }
     };
 

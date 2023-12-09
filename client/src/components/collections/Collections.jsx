@@ -16,7 +16,9 @@ export default function Collections() {
             .then(data => {
                 setCollection(Object.values(data))
             })
-            .catch(err => console.log(err));
+            .catch(error => {
+                throw error
+            });
     }, [locationName]);
 
 

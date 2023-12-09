@@ -14,7 +14,9 @@ export default function MyProfilePage() {
     useEffect(() => {
         itemService.getOwnerItems(userId)
             .then(result => setItems(result))
-            .catch(err => console.log(err));
+            .catch(error => {
+                throw error;
+            });
     }, []);
 
     return (

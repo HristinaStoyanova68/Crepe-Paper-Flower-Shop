@@ -17,7 +17,9 @@ export default function ItemRemove() {
         .then(result => {
             setItem(result);
         })
-        .catch(err => console.log(err));
+        .catch(error => {
+            throw error;
+        });
     }, [itemId]);
 
     const removeItemSubmitHandler = async(e) => {
@@ -30,8 +32,10 @@ export default function ItemRemove() {
                 await itemService.remove(collectionName, itemId);
     
                 navigate(Path.Home);
-            } catch (err) {
-                console.log(err);
+            } catch (error) {
+                navigate(Path.NotFoundPage);
+
+                throw error;
             }
         }       
     }

@@ -30,8 +30,8 @@ export default function ItemCreate() {
             await itemService.create(collectionName, values);
 
             navigate(Path.Home);
-        } catch (err) {
-            throw err;
+        } catch (error) {
+            throw error;
         }
     }
 
