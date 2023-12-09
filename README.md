@@ -38,7 +38,7 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 
 ## Features
 
-- ### Carousel Features:
+- **Carousel Features:**
 
 **1.Collections Carousel:**
 Our application features three distinct carousels showcasing the names of the following collections: 
@@ -52,11 +52,11 @@ These carousel offer a visual representation of each collection, allowing users 
 **3.New Releases Carousel:**
 Additionally, we provide a carousel displaying the most recent items added to our platform. This carousel showcases the latest additions from all collections, providing users with a quick glance at the most recent items available.
 
-- ### Dropdown Navigation for Collections:
+- **Dropdown Navigation for Collections:**
 
 Our application includes a dropdown menu containing the names of the various collections. This feature enables users to easily and swiftly navigate to their preferred collection, allowing them to explore the items within it effortlessly.
 
-- ### User Authentication: 
+- **User Authentication:** 
 Secure user authentication ensures a personalized experience for each member with their created items.
 
 
@@ -91,25 +91,21 @@ The project follows a structured organization to enhance maintainability and eas
 
 ## API Reference
 
-- ### API Description:
-
-The API service serves as the backend for a product-focused website that facilitates user registration, login functionality, and navigation for both registered and guest users.
-
-#### User Authentication:
+**User Authentication:**
 
 - **Registration:** Allows users to create personalized accounts, enabling them to create, edit, or delete items.
 - **Login:** Registered users can log in to access additional functionalities.
 - **Guest Access:** Unregistered users can browse the site but cannot perform CRUD operations or like items.
 
-#### User Actions:
+**User Actions:**
 
 - **Create, Edit, Delete Items:** Logged-in users have the ability to create, modify, and delete items.
 - **View Created Items:** Users can view all items they've created.
 - **Like Items:** Logged-in users (non-creators) can like items but cannot like their own created items.
 
-- ### Server
+**Server**
 
-#### Usage
+- **Usage**
 
 This is **REST service**, provided for educational purposes by **SoftUni Practice Server**. To execute it, open a command prompt and run `node server.js`.
 
@@ -120,7 +116,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 ## API Endpoints
 
-### Authentication
+**Authentication**
 
 - **BaseUrl**
 
@@ -162,7 +158,7 @@ _Description:_ Authenticate and log in a user.
 }
 ```
 
-### Collections
+**Collections**
 
 - **BaseUrl**
 
@@ -189,7 +185,7 @@ _Description:_ Get Collections
 }
 ```
 
-### For both logged-in and guest users:
+**For both logged-in and guest users:**
 
 - **GET /:collectionName/:itemId/details**
 
@@ -209,7 +205,7 @@ _Description:_ Get item and it's details.
 }
 ```
 
-### For logged in users - Likes functionality
+**For logged in users - Likes functionality**
 
 - **BaseUrl**
 
@@ -246,7 +242,7 @@ Example structure:
 ]
 ```
 
-### For Owner users - edit and remove item
+**For Owner users - edit and remove item**
 
 - **BaseUrl**
 
