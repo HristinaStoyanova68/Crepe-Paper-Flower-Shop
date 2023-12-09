@@ -1,30 +1,3 @@
-
-# HRISTINA’S CRAFT WORLD ReactJS
-
-The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where handmade things from and with crepe paper can be listed. Here you can enjoy exquisitely made crepe paper bouquets, also decorations for home or your unforgettable party, as well as see a variety of gift boxes decorated with crepe paper. On this platform, the user will have the opportunity to both view and browse their own crepe paper stuff. Let's share the pleasure of our hobby - to create beautiful flowers and decorations that will be part of the comfort of the day.
-
-## Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [Tech Stack](#tech-stack)
-3. [Features](#features)
-4. [How it works](#how-it-works)
-5. [Project Structure](#project-structure)
-6. [API Reference](#api-reference)
-7. [API Endpoints](#api-endpoints)
-8. [License](#license)
-9. [Credits](#credits)
-
-## Project Overview
-
-**HRISTINA’S CRAFT WORLD ReactJS** aims to bring together people for whom the beauty of small things makes тхеир day beautiful and smiling. It is a place where anyone can view or showcase incredible flowers, bouquets, or decorations made solely from crepe paper.
-
-## Project deployment
-
-**HRISTINA’S CRAFT WORLD ReactJS** is deployed on a free hosting service [Firebase](https://firebase.google.com/). You have the opportunity to experience its features firsthand. To access the live version, simply visit [HRISTINA’S CRAFT WORLD ReactJS](https://hristina-s-craft-world-reactjs.firebaseapp.com/).
-
-## Tech Stack
-
 [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![HTML5](https://img.shields.io/badge/HTML5-Language-blue)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![CSS3](https://img.shields.io/badge/CSS3-Styles-orange)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
@@ -35,28 +8,51 @@ The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where han
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.3.2-purple)](https://github.com/HristinaStoyanova68/Crepe-Paper-Flower-Shop)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
+# HRISTINA’S CRAFT WORLD ReactJS
+
+The project **HRISTINA’S CRAFT WORLD ReactJS** is an online platform where handmade things from and with crepe paper can be listed. Here you can enjoy exquisitely made crepe paper bouquets, also decorations for home or your unforgettable party, as well as see a variety of gift boxes decorated with crepe paper. On this platform, the user will have the opportunity to both view and browse their own crepe paper stuff. Let's share the pleasure of our hobby - to create beautiful flowers and decorations that will be part of the comfort of the day.
+
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [How it works](#how-it-works)
+4. [Project Structure](#project-structure)
+5. [API Reference](#api-reference)
+6. [API Endpoints](#api-endpoints)
+7. [License](#license)
+8. [Credits](#credits)
+
+## Project Overview
+
+**HRISTINA’S CRAFT WORLD ReactJS** aims to bring together people for whom the beauty of small things makes тхеир day beautiful and smiling. It is a place where anyone can view or showcase incredible flowers, bouquets, or decorations made solely from crepe paper.
+
+## Project deployment
+
+**HRISTINA’S CRAFT WORLD ReactJS** is deployed on a free hosting service [Firebase](https://firebase.google.com/). You have the opportunity to experience its features firsthand. To access the live version, simply visit [HRISTINA’S CRAFT WORLD ReactJS](https://hristina-s-craft-world-reactjs.firebaseapp.com/).
 
 ## Features
 
-- **Carousel Features:**
+**1. Carousel Features:**
 
-**1.Collections Carousel:**
+- **Collections Carousel:**
 Our application features three distinct carousels showcasing the names of the following collections: 
-- bouquets 
-- decorations
-- gift boxes
+    - bouquets 
+    - decorations
+    - gift boxes
 
-**2.Items Carousel:**
+- **Items Carousel:**
 These carousel offer a visual representation of each collection, allowing users to preview three elements from each category swiftly.
 
-**3.New Releases Carousel:**
+- **New Releases Carousel:**
 Additionally, we provide a carousel displaying the most recent items added to our platform. This carousel showcases the latest additions from all collections, providing users with a quick glance at the most recent items available.
 
-- **Dropdown Navigation for Collections:**
+**2. Dropdown Navigation for Collections:**
 
 Our application includes a dropdown menu containing the names of the various collections. This feature enables users to easily and swiftly navigate to their preferred collection, allowing them to explore the items within it effortlessly.
 
-- **User Authentication:** 
+**3. User Authentication:** 
+
 Secure user authentication ensures a personalized experience for each member with their created items.
 
 
@@ -77,7 +73,7 @@ Unauthenticated visitors can browse all collections and their contents but canno
 
 The project follows a structured organization to enhance maintainability and ease of navigation. Here's a brief overview of the main directories and their purposes:
 
-- **/client:**
+- `**/client:**`
  Contains the frontend application built with React.
 
     - `/public:`
@@ -86,7 +82,7 @@ The project follows a structured organization to enhance maintainability and eas
     - `/src:`
  React components, styles, and application logic.
 
- - **/server:**
+ - `**/server:**`
  REST service, provided for educational purposes by **SoftUni Practice Server**.
 
 ## API Reference
@@ -116,7 +112,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 ## API Endpoints
 
-**Authentication**
+**1. Authentication**
 
 - **BaseUrl**
 
@@ -158,7 +154,7 @@ _Description:_ Authenticate and log in a user.
 }
 ```
 
-**Collections**
+**2. Collections**
 
 - **BaseUrl**
 
@@ -185,7 +181,7 @@ _Description:_ Get Collections
 }
 ```
 
-**For both logged-in and guest users:**
+**3. For both logged-in and guest users:**
 
 - **GET /:collectionName/:itemId/details**
 
@@ -205,7 +201,7 @@ _Description:_ Get item and it's details.
 }
 ```
 
-**For logged in users - Likes functionality**
+**4. For logged in users - Likes functionality**
 
 - **BaseUrl**
 
@@ -242,7 +238,7 @@ Example structure:
 ]
 ```
 
-**For Owner users - edit and remove item**
+**5. For Owner users - edit and remove item**
 
 - **BaseUrl**
 
