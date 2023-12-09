@@ -73,7 +73,7 @@ Unauthenticated visitors can browse all collections and their contents but canno
 
 The project follows a structured organization to enhance maintainability and ease of navigation. Here's a brief overview of the main directories and their purposes:
 
-- `**/client:**`
+- `/client:`
  Contains the frontend application built with React.
 
     - `/public:`
@@ -82,7 +82,7 @@ The project follows a structured organization to enhance maintainability and eas
     - `/src:`
  React components, styles, and application logic.
 
- - `**/server:**`
+ - `/server:`
  REST service, provided for educational purposes by **SoftUni Practice Server**.
 
 ## API Reference
@@ -114,9 +114,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 **1. Authentication**
 
-- **BaseUrl**
-
-`http://localhost:3030/users`
+**BaseUrl:** `http://localhost:3030/users`
 
 - **POST /register**
 
@@ -156,9 +154,7 @@ _Description:_ Authenticate and log in a user.
 
 **2. Collections**
 
-- **BaseUrl**
-
-`http://localhost:3030/data`
+**BaseUrl:** `http://localhost:3030/data`
 
 - **GET /bouquets**
 
@@ -203,9 +199,7 @@ _Description:_ Get item and it's details.
 
 **4. For logged in users - Likes functionality**
 
-- **BaseUrl**
-
-`http://localhost:3030/data/likes`
+**BaseUrl:** `http://localhost:3030/data/likes`
 
 - **GET/:itemId**
 
@@ -240,9 +234,7 @@ Example structure:
 
 **5. For Owner users - edit and remove item**
 
-- **BaseUrl**
-
-`http://localhost:3030/data`
+**BaseUrl:** `http://localhost:3030/data`
 
 - **GET /:collectionName/:itemId/edit**
 
