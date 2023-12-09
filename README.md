@@ -120,18 +120,17 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 
 ## API Endpoints
 
-- ### Authentication
+### Authentication
 
-#### BaseUrl
+- **BaseUrl**
 
 `http://localhost:3030/users`
 
-#### Register:
-
 - **POST /register**
+
 _Description:_ Register and log in a new user.**
 - _Request:_
-```
+```json
 {
     "username": "string",
     "email": "string",
@@ -145,92 +144,88 @@ _Description:_ Register and log in a new user.**
 }
 ```
 
-#### Login:
+- **POST /login**
 
-##### POST /login
+_Description:_ Authenticate and log in a user.**
 
-**Description: Authenticate and log in a user.**
-
-**Request:**
+- _Request:_
 ```json
 {
     "username": "string",
     "password": "string"
 }
 ```
-**Response:**
+- _Response:_
 ```json
 {
     "User Data": "userData"
 }
 ```
 
-- ### Collections
+### Collections
 
-#### BaseUrl
+- **BaseUrl**
 
 `http://localhost:3030/data`
 
-##### GET /bouquets
+- **GET /bouquets**
 
-##### GET /decorations
+- **GET /decorations**
 
-##### GET /gift_boxes
+- **GET /gift_boxes**
 
-**Description: Get Collections**
+_Description:_ Get Collections**
 
-**Request:**
+- _Request:_
 ```json
 {
     "collectionName": "string",
 }
 ```
-**Response:**
+- _Response:_
 ```json
 {
     "collectionName ": "collectionName"
 }
 ```
 
-- ### For both logged-in and guest users:
+### For both logged-in and guest users:
 
-##### GET /:collectionName/:itemId/details
+- **GET /:collectionName/:itemId/details**
 
-**Description: Get item and it's details.**
+_Description:_ Get item and it's details.**
 
-**Request:**
+- _Request:_
 ```json
 {
     "collectionName": "string",
     "itemId": "unique_id_here"
 }
 ```
-**Response:**
+- _Response:_
 ```json
 {
     "itemData ": "itemData"
 }
 ```
 
-- ### For logged in users:
+### For logged in users - Likes functionality
 
-**Likes functionality**
-
-#### BaseUrl
+- **BaseUrl**
 
 `http://localhost:3030/data/likes`
 
-##### GET/:itemId
+- **GET/:itemId**
 
-**Description: Get all likes**
+_Description:_ Get all likes**
 
-**Request:**
+- _Request:_
 ```json
 {
     "itemId": "unique_id_here"
 }
 ```
-**Response:**
+- _Response:_
 
 The response will be an array of objects, where the key for each object will be its index in the array, and the value will be "itemData".
 
@@ -251,42 +246,42 @@ Example structure:
 ]
 ```
 
-- ### For Owner users:
+### For Owner users - edit and remove item
 
-#### BaseUrl
+- **BaseUrl**
 
 `http://localhost:3030/data`
 
-##### GET /:collectionName/:itemId/edit
+- **GET /:collectionName/:itemId/edit**
 
-**Description: Edit item's details.**
+_Description:_ Edit item's details.**
 
-**Request:**
+- _Request:_
 ```json
 {
     "collectionName": "string",
     "itemId": "unique_id_here"
 }
 ```
-**Response:**
+- _Response:_
 ```json
 {
     "itemData ": "itemData"
 }
 ```
 
-##### GET /:collectionName/:itemId/remove
+- **GET /:collectionName/:itemId/remove**
 
-**Description: Get item and remove it.**
+_Description:_ Get item and remove it.**
 
-**Request:**
+- _Request:_
 ```json
 {
     "collectionName": "string",
     "itemId": "unique_id_here"
 }
 ```
-**Response:**
+- _Response:_
 ```json
 {
     "success": true,
