@@ -294,8 +294,7 @@ This is **REST service**, provided for educational purposes by **SoftUni Practic
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
 
-## Credits
-This documentation is writen with the help of [ChatGPT](https://www.openai.com/chatgpt/)
+
 
 
 
